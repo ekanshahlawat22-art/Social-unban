@@ -1,0 +1,2081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy Birthday Annu Punia, My Love ❤️ (10-Step Reel)</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        script: ['"Dancing Script"', 'cursive'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        roseGlow: '#ff2a85',
+                        goldGlow: '#ffd166',
+                        deepNight: '#0f0514',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        * {
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+
+        body {
+            background: radial-gradient(circle at 50% 15%, #38092f 0%, #17041c 55%, #07010a 100%);
+            color: #fff;
+            overflow: hidden;
+            height: 100dvh;
+            width: 100vw;
+            position: relative;
+        }
+
+        /* Glassmorphism Utilities */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.075);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border: 1px solid rgba(255, 182, 193, 0.24);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55), 0 0 30px rgba(255, 42, 133, 0.16);
+        }
+
+        .glass-pill {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+        }
+
+        /* Polaroid Styling */
+        .polaroid-frame {
+            background: linear-gradient(145deg, #fffdf9 0%, #f7eef2 100%);
+            padding: 12px 12px 36px 12px;
+            box-shadow: 0 22px 45px rgba(0,0,0,0.6), 0 0 25px rgba(255,42,133,0.25);
+            border-radius: 16px;
+            transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        /* Animations */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(1.5deg); }
+        }
+        .animate-float {
+            animation: floatSlow 3.5s ease-in-out infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { filter: drop-shadow(0 0 15px rgba(255, 42, 133, 0.7)); transform: scale(1); }
+            50% { filter: drop-shadow(0 0 32px rgba(255, 209, 102, 0.95)); transform: scale(1.04); }
+        }
+        .gift-glow {
+            animation: pulseGlow 2.4s infinite ease-in-out;
+        }
+
+        @keyframes shakeBox {
+            0%, 100% { transform: rotate(0deg) scale(1.05); }
+            20% { transform: rotate(-8deg) scale(1.08); }
+            40% { transform: rotate(8deg) scale(1.1); }
+            60% { transform: rotate(-6deg) scale(1.08); }
+            80% { transform: rotate(6deg) scale(1.06); }
+        }
+        .shake-anim {
+            animation: shakeBox 0.55s ease-in-out;
+        }
+
+        /* Candle Flame Animation */
+        @keyframes flicker {
+            0%, 100% { transform: scaleY(1) scaleX(1) rotate(-1deg); opacity: 1; }
+            25% { transform: scaleY(1.14) scaleX(0.92) rotate(2deg); opacity: 0.92; }
+            50% { transform: scaleY(0.94) scaleX(1.06) rotate(-2deg); opacity: 1; }
+            75% { transform: scaleY(1.08) scaleX(0.95) rotate(1deg); opacity: 0.95; }
+        }
+        .flame {
+            animation: flicker 0.55s infinite ease-in-out;
+            transform-origin: bottom center;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .flame.extinguished {
+            transform: scale(0) translateY(-15px);
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* Shimmering Text */
+        .shimmer-text {
+            background: linear-gradient(90deg, #fff 0%, #ff9ebb 30%, #ffd166 50%, #ff9ebb 70%, #fff 100%);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: shimmer 4s linear infinite;
+        }
+        @keyframes shimmer {
+            to { background-position: 200% center; }
+        }
+
+        /* Custom Scrollbar */
+        .custom-scroll::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+        }
+        .custom-scroll::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background: rgba(255, 42, 133, 0.5);
+            border-radius: 10px;
+        }
+
+        /* Floating Pop Compliments */
+        @keyframes floatUpFade {
+            0% { opacity: 0; transform: translateY(10px) scale(0.7); }
+            20% { opacity: 1; transform: translateY(-10px) scale(1.05); }
+            80% { opacity: 1; transform: translateY(-65px) scale(1); }
+            100% { opacity: 0; transform: translateY(-95px) scale(0.85); }
+        }
+        .floating-compliment {
+            animation: floatUpFade 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            pointer-events: none;
+        }
+
+        /* Scanner Ring */
+        @keyframes scanLine {
+            0% { top: 8%; opacity: 0.9; }
+            50% { top: 88%; opacity: 1; }
+            100% { top: 8%; opacity: 0.9; }
+        }
+        .scanner-bar {
+            animation: scanLine 1.6s ease-in-out infinite;
+        }
+
+        /* Hide edit triggers in Presentation Mode */
+        body.presentation-locked .edit-trigger {
+            display: none !important;
+        }
+    </style>
+</head>
+<body class="font-sans flex items-center justify-center select-none presentation-locked">
+
+    <!-- Background Canvas for Stars, Petals & Fireworks -->
+    <canvas id="bgCanvas" class="fixed inset-0 pointer-events-none z-0"></canvas>
+
+    <!-- Floating Pop-up Layer -->
+    <div id="complimentLayer" class="fixed inset-0 pointer-events-none z-50 overflow-hidden"></div>
+
+    <!-- Hidden File Input for Quick Slot Upload -->
+    <input type="file" id="quickSlotInput" class="hidden" accept="image/*,video/*" onchange="handleQuickSlotFile(event)">
+    <!-- Hidden Multi-File Input for One-Click 5-File Auto-Mapping -->
+    <input type="file" id="fiveFilesQuickInput" class="hidden" multiple accept="image/*,video/*" onchange="handleBulkUpload(event)">
+
+    <!-- ==========================================================
+         MEDIA STUDIO MODAL (UPLOAD PHOTOS & VIDEOS FOR ANNU)
+    =========================================================== -->
+    <div id="studioModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-lg p-3 sm:p-5">
+        <div class="glass-card w-full max-w-[440px] max-h-[90dvh] rounded-3xl flex flex-col overflow-hidden border border-pink-400/40 shadow-2xl">
+            <!-- Modal Header -->
+            <div class="p-4 border-b border-white/15 flex items-center justify-between bg-gradient-to-r from-pink-950/80 to-purple-950/80">
+                <div class="flex items-center gap-2.5">
+                    <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-pink-500 to-amber-400 flex items-center justify-center text-white shadow">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-serif font-bold text-base text-white">Sender Setup & Share Exporter 🎁</h3>
+                        <p class="text-[11px] text-pink-200/80">Pack your 3 photos & 2 videos to send to Annu</p>
+                    </div>
+                </div>
+                <button onclick="closeStudioModal()" class="w-8 h-8 rounded-full glass-pill flex items-center justify-center text-pink-200 hover:text-white">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Step-by-Step Export & Share Banner -->
+            <div class="px-4 pt-3 pb-3 bg-pink-500/10 border-b border-white/10 flex flex-col gap-2.5">
+                <div class="grid grid-cols-1 gap-2">
+                    <label class="cursor-pointer py-2.5 px-3 rounded-xl bg-gradient-to-r from-pink-500 to-rose-600 text-xs font-bold text-white text-center shadow-md active:scale-95 transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <span>Step 1: Select Your 3 Photos + 2 Videos</span>
+                        <input type="file" multiple accept="image/*,video/*" class="hidden" onchange="handleBulkUpload(event)">
+                    </label>
+
+                    <button onclick="exportSingleShareableHTML()" id="exportGiftBtn" class="py-3 px-3 rounded-xl bg-gradient-to-r from-emerald-400 via-teal-400 to-amber-300 text-slate-950 text-xs font-extrabold text-center shadow-lg active:scale-95 transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-file-arrow-down text-sm"></i>
+                        <span>Step 2: Download Shareable File for Annu (.html)</span>
+                    </button>
+                </div>
+
+                <div class="rounded-xl bg-black/45 border border-amber-300/30 p-2.5 text-[10px] text-pink-100/90 space-y-1 leading-relaxed">
+                    <p class="font-bold text-amber-300"><i class="fa-solid fa-paper-plane mr-1"></i>How to send to Annu on WhatsApp / Telegram / Link:</p>
+                    <p>1. Tap <b>Step 1</b> above and choose your 3 photos & 2 videos of Annu.</p>
+                    <p>2. Tap <b>Step 2</b> to download <code>Happy-Birthday-Annu-Punia.html</code> (all photos & videos are embedded inside that single file!).</p>
+                    <p>3. Send that file directly on <b>WhatsApp / Telegram</b>, or drag it onto <b>app.netlify.com/drop</b> for an instant website link!</p>
+                </div>
+
+                <div class="flex items-center justify-between pt-0.5">
+                    <span class="text-[10px] text-pink-200/80">Want to edit buttons directly on screen?</span>
+                    <button onclick="togglePresentationLock()" id="lockModeBtn" class="py-1 px-2.5 rounded-lg glass-pill text-[10px] font-semibold text-emerald-300 hover:bg-white/15 active:scale-95 transition flex items-center gap-1">
+                        <i class="fa-solid fa-lock" id="lockModeIcon"></i>
+                        <span id="lockModeText">Gift Mode: ON (Clean UI)</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Individual Slot List -->
+            <div id="studioSlotList" class="p-4 overflow-y-auto custom-scroll flex-1 space-y-2.5">
+                <!-- Populated dynamically via JS -->
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="p-3.5 border-t border-white/15 bg-black/40 flex items-center justify-between gap-2">
+                <button onclick="resetAllMedia()" class="px-3 py-2 rounded-xl text-[11px] text-rose-300 hover:bg-rose-500/20 transition">
+                    <i class="fa-solid fa-rotate-left mr-1"></i>Reset
+                </button>
+                <button onclick="closeStudioModal()" class="px-6 py-2.5 rounded-xl bg-gradient-to-r from-amber-400 to-pink-500 text-xs font-bold text-slate-950 shadow-lg active:scale-95 transition">
+                    Return to Annu's Reel ✨
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================
+         MAIN REELS CONTAINER (9:16 MOBILE FRAME)
+    =========================================================== -->
+    <main class="relative z-10 w-full h-full sm:max-w-[430px] sm:h-[94dvh] sm:rounded-[38px] sm:border sm:border-pink-400/35 sm:shadow-[0_0_75px_rgba(255,42,133,0.32)] overflow-hidden flex flex-col justify-between bg-gradient-to-b from-pink-950/35 via-purple-950/25 to-black/65 backdrop-blur-[2px]">
+
+        <!-- Top Instagram Reels / Stories 10-Step Header -->
+        <header class="pt-3.5 px-3.5 pb-2 z-30 bg-gradient-to-b from-black/60 to-transparent">
+            <!-- 10-Segment Story Progress Bar -->
+            <div id="storyBarContainer" class="grid grid-cols-10 gap-1 mb-2.5">
+                <!-- Populated dynamically for Steps 1..10 -->
+            </div>
+
+            <!-- Reels Profile Info & Controls -->
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <div onclick="goToStep(1)" class="cursor-pointer w-9 h-9 rounded-full p-[2px] bg-gradient-to-tr from-pink-500 via-rose-400 to-amber-300 shadow-lg shadow-pink-500/30">
+                        <div class="w-full h-full rounded-full bg-rose-950 flex items-center justify-center text-sm overflow-hidden" id="avatarThumb">
+                            <img src="image.png" onerror="this.style.display='none';this.parentElement.innerHTML='👑';" class="w-full h-full object-cover" alt="Annu">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-1">
+                            <span class="font-semibold text-xs sm:text-sm tracking-wide text-white">Annu Punia, My Love</span>
+                            <span class="text-pink-400 text-[11px]"><i class="fa-solid fa-circle-check"></i></span>
+                        </div>
+                        <div class="flex items-center gap-1.5 text-[10px] text-pink-200/80">
+                            <span id="stepBadgeLabel" class="text-amber-300 font-semibold">Step 1 of 10</span>
+                            <span>•</span>
+                            <i class="fa-solid fa-music text-[9px] animate-bounce"></i>
+                            <span>Annu's Birthday Reel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Action Pills: Clean Gift Controls + Discreet Sender Exporter Trigger -->
+                <div class="flex items-center gap-1.5">
+                    <button onclick="document.getElementById('fiveFilesQuickInput').click()" class="edit-trigger glass-pill px-2.5 h-8 rounded-full flex items-center gap-1 text-[10px] font-bold text-emerald-200 hover:text-white border border-emerald-400/40 active:scale-95 transition shadow" title="Select all 3 photos & 2 videos at once">
+                        <i class="fa-solid fa-bolt text-amber-300"></i>
+                        <span>Load 5 Files</span>
+                    </button>
+
+                    <button id="senderSetupBtn" onclick="openStudioModal()" class="glass-pill w-8 h-8 rounded-full flex items-center justify-center text-[11px] font-semibold text-amber-300/80 hover:text-amber-200 border border-amber-300/30 active:scale-95 transition shadow" title="Sender Setup & Download Shareable Gift File">
+                        <i class="fa-solid fa-gift"></i>
+                    </button>
+
+                    <button id="audioBtn" onclick="toggleMusic()" class="glass-pill w-8 h-8 rounded-full flex items-center justify-center text-pink-200 hover:text-white active:scale-90 transition shadow">
+                        <i id="audioIcon" class="fa-solid fa-volume-xmark text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- ==========================================================
+             10 INTERACTIVE STEPS VIEWPORT
+        =========================================================== -->
+        <div class="relative flex-1 flex flex-col overflow-hidden">
+
+            <!-- STEP 1: SECRET HEART FINGERPRINT / PASSCODE LOCK -->
+            <section id="step-1" class="step-view flex-1 flex flex-col items-center justify-between px-5 py-3 text-center">
+                <div class="mt-1">
+                    <span class="px-3 py-1 rounded-full glass-pill text-[10px] uppercase tracking-widest text-pink-300 font-semibold">
+                        Step 1 of 10 • Royal Verification
+                    </span>
+                    <h1 class="font-serif text-2xl sm:text-3xl font-bold mt-2 shimmer-text">
+                        Annu Punia, My Love
+                    </h1>
+                    <p class="text-xs text-pink-200/80 mt-1">
+                        Private 10-Step Birthday Reel • Verify you are the Queen of My Heart
+                    </p>
+                </div>
+
+                <!-- Interactive Heart Biometric Scanner -->
+                <div class="my-auto flex flex-col items-center">
+                    <div id="scannerCircle" onmousedown="startHeartScan()" onmouseup="cancelHeartScan()" ontouchstart="startHeartScan(event)" ontouchend="cancelHeartScan()" onclick="quickTapHeartScan()" class="cursor-pointer relative w-40 h-40 rounded-full glass-card flex flex-col items-center justify-center border-2 border-pink-400/50 shadow-[0_0_40px_rgba(255,42,133,0.4)] active:scale-95 transition overflow-hidden group">
+                        <!-- Animated Laser Scan Bar -->
+                        <div class="scanner-bar absolute inset-x-4 h-0.5 bg-gradient-to-r from-transparent via-amber-300 to-transparent shadow-[0_0_12px_#ffd166]"></div>
+                        
+                        <i id="scanHeartIcon" class="fa-solid fa-fingerprint text-5xl text-pink-400 group-hover:text-amber-300 transition duration-300"></i>
+                        <span id="scanStatusText" class="text-[11px] font-semibold text-pink-100 mt-2 tracking-wide">
+                            TAP TO VERIFY
+                        </span>
+                    </div>
+
+                    <p id="scanResultMsg" class="text-xs text-amber-300 font-medium mt-4 h-5">
+                        ✨ Identity required: The Girl with the Prettiest Smile & Jhumkas
+                    </p>
+                </div>
+
+                <!-- Romantic Footer Note (Clean for Annu) -->
+                <div class="w-full space-y-2">
+                    <div class="glass-pill rounded-2xl p-2.5 flex items-center justify-between border border-pink-400/30">
+                        <div class="flex items-center gap-2.5 text-left">
+                            <div class="w-8 h-8 rounded-xl bg-pink-500/30 flex items-center justify-center text-amber-300">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-white">Exclusively Crafted for Annu Punia ❤️</p>
+                                <p class="text-[10px] text-pink-200/80">10 Interactive Steps • Turn your sound ON 🎵</p>
+                            </div>
+                        </div>
+                        <button onclick="quickTapHeartScan()" class="px-2.5 py-1 rounded-lg bg-gradient-to-r from-pink-500 to-amber-400 text-slate-950 font-bold text-[10px] shadow">Start ✨</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- STEP 2: 3D MYSTERY GIFT BOX UNWRAP -->
+            <section id="step-2" class="step-view hidden flex-1 flex-col items-center justify-between px-5 py-3 text-center">
+                <div>
+                    <span class="px-3 py-1 rounded-full glass-pill text-[10px] uppercase tracking-widest text-amber-300 font-semibold">
+                        Step 2 of 10 • The Birthday Parcel
+                    </span>
+                    <h2 class="font-serif text-2xl sm:text-3xl font-bold mt-2 shimmer-text">
+                        A Box Full of Our Memories
+                    </h2>
+                    <p id="boxSubtext" class="text-xs text-pink-200/80 mt-1">
+                        Tap the ribbon 3 times to untie your birthday surprise, Annu!
+                    </p>
+                </div>
+
+                <!-- Interactive Gift Box -->
+                <div onclick="tapGiftBox()" id="giftBoxWrapper" class="cursor-pointer relative my-auto flex flex-col items-center animate-float">
+                    <div class="relative w-44 h-44 flex items-center justify-center gift-glow">
+                        <svg viewBox="0 0 200 200" class="w-full h-full drop-shadow-2xl">
+                            <defs>
+                                <linearGradient id="boxBody2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#ff2a85"/>
+                                    <stop offset="100%" stop-color="#9b0047"/>
+                                </linearGradient>
+                                <linearGradient id="boxLid2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#ff5ca1"/>
+                                    <stop offset="100%" stop-color="#c8005a"/>
+                                </linearGradient>
+                                <linearGradient id="goldRibbon2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#fff3b0"/>
+                                    <stop offset="50%" stop-color="#ffd166"/>
+                                    <stop offset="100%" stop-color="#e09f1f"/>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="30" cy="45" r="4" fill="#ffd166" class="animate-ping" />
+                            <circle cx="170" cy="55" r="3" fill="#ff9ebb" class="animate-ping" />
+                            <path d="M100 58 C65 20, 40 55, 92 64 Z" fill="url(#goldRibbon2)" />
+                            <path d="M100 58 C135 20, 160 55, 108 64 Z" fill="url(#goldRibbon2)" />
+                            <circle cx="100" cy="60" r="9" fill="#ffe082" />
+                            <rect x="40" y="82" width="120" height="90" rx="12" fill="url(#boxBody2)" stroke="#ff9ebb" stroke-width="1.5"/>
+                            <rect x="90" y="82" width="20" height="90" fill="url(#goldRibbon2)"/>
+                            <rect x="40" y="118" width="120" height="18" fill="url(#goldRibbon2)"/>
+                            <rect x="32" y="60" width="136" height="26" rx="8" fill="url(#boxLid2)" stroke="#ffc2d4" stroke-width="1.5"/>
+                            <rect x="89" y="60" width="22" height="26" fill="url(#goldRibbon2)"/>
+                            <text x="100" y="155" text-anchor="middle" fill="#fff" font-size="14" font-family="Dancing Script" font-weight="bold">For Annu ❤️</text>
+                        </svg>
+                    </div>
+                    <span id="giftTapBadge" class="mt-2 px-4 py-1 rounded-full bg-amber-400 text-slate-950 font-bold text-xs shadow">
+                        Tap Box to Unwrap (0/3) 🎁
+                    </span>
+                </div>
+
+                <button onclick="goToStep(3)" class="w-full py-3 rounded-2xl bg-gradient-to-r from-pink-500 via-rose-500 to-amber-500 font-semibold text-xs sm:text-sm text-white shadow-lg active:scale-95 transition">
+                    Reveal Photo #1 (White Dupatta & Jhumkas) <i class="fa-solid fa-arrow-right ml-1"></i>
+                </button>
+            </section>
+
+            <!-- STEP 3: DEVELOPING POLAROID #1 (PHOTO #1: image.png - White Floral Suit & Silver Jhumkas) -->
+            <section id="step-3" class="step-view hidden flex-1 flex-col items-center justify-between px-5 py-2 text-center">
+                <div>
+                    <span class="px-3 py-1 rounded-full glass-pill text-[10px] uppercase tracking-widest text-pink-300 font-semibold">
+                        Step 3 of 10 • Angelic Glow (Photo #1)
+                    </span>
+                    <h2 class="font-serif text-xl sm:text-2xl font-bold mt-1 shimmer-text">
+                        White Dupatta & Silver Jhumkas 📸
+                    </h2>
+                    <p class="text-[11px] text-pink-200/80">
+                        Tap the Polaroid to develop your portrait!
+                    </p>
+                </div>
+
+                <!-- Vintage Polaroid Frame -->
+                <div class="relative my-auto w-full max-w-[280px]">
+                    <div onclick="developPolaroid()" id="polaroidCard1" class="polaroid-frame cursor-pointer transform -rotate-1 hover:rotate-0 relative">
+                        <!-- Edit Slot Button -->
+                        <button onclick="triggerQuickUpload('photo1', event)" class="edit-trigger absolute top-4 right-4 z-20 px-2.5 py-1 rounded-full bg-black/75 text-amber-300 text-[10px] font-semibold border border-amber-300/40 hover:bg-black">
+                            <i class="fa-solid fa-camera mr-1"></i>Swap Photo #1
+                        </button>
+
+                        <div class="w-full h-60 rounded-lg overflow-hidden bg-rose-950 relative">
+                            <img id="media-photo1" src="image.png" onerror="handleImageFallback(this, 'photo1')" alt="Annu White Floral Suit & Silver Jhumkas" class="w-full h-full object-cover object-top transition-all duration-1000 blur-md scale-105">
+                            <div id="polaroidOverlay1" class="absolute inset-0 bg-black/45 flex flex-col items-center justify-center text-white p-4 transition-opacity duration-700">
+                                <i class="fa-solid fa-wand-magic-sparkles text-2xl text-amber-300 animate-bounce mb-2"></i>
+                                <span class="text-xs font-bold">Tap to Develop Annu's Portrait ✨</span>
+                            </div>
+                        </div>
+
+                        <p id="caption-photo1" class="font-script text-lg sm:text-xl text-rose-900 mt-2.5 leading-snug px-1">
+                            That soft smile, those pretty silver jhumkas, and the strand of hair framing your face — pure magic, Annu ✨
+                        </p>
+                    </div>
+                </div>
+
+                <button onclick="goToStep(4)" class="w-full py-3 rounded-2xl bg-gradient-to-r from-pink-500 to-amber-500 font-semibold text-xs sm:text-sm text-white shadow-lg active:scale-95 transition">
+                    Test Our Heartbeat Meter <i class="fa-solid fa-bolt ml-1"></i>
+                </button>
+            </section>
+
+            <!-- STEP 4: LOVE METER OVERDRIVE -->
+            <section id="step-4" class="step-view hidden flex-1 flex-col items-center justify-between px-5 py-3 text-center">
+                <div>
+                    <span class="px-3 py-1 rounded-full glass-pill text-[10px] uppercase tracking-widest text-amber-300 font-semibold">
+                        Step 4 of 10 • Heartbeat Calculator
+                    </span>
+                    <h2 class="font-serif text-2xl font-bold mt-1.5 shimmer-text">
+                        How Much Do I Love Annu? 💓
+                    </h2>
+                    <p class="text-[11px] text-pink-200/80">
+                        Tap & charge the meter to calculate my love for you
+                    </p>
+                </div>
+
+                <!-- Circular / Vertical Love Gauge -->
+                <div class="my-auto w-full flex flex-col items-center">
+                    <div class="w-44 h-44 rounded-full glass-card border-4 border-pink-500/40 flex flex-col items-center justify-center relative shadow-[0_0_50px_rgba(255,42,133,0.35)]">
+                        <div class="text-3xl mb-1 animate-bounce">💖</div>
+                        <span id="lovePercentDisplay" class="font-serif font-bold text-2xl sm:text-3xl text-amber-300">
+                            0%
+                        </span>
+                        <span id="loveMeterStatus" class="text-[10px] uppercase tracking-widest text-pink-200 mt-1 px-2">
+                            Ready to Scan
+                        </span>
+                    </div>
+
+                    <div class="w-full max-w-[270px] h-3 bg-white/10 rounded-full overflow-hidden mt-5 p-0.5 border border-pink-400/30">
+                        <div id="loveBarFill" class="h-full w-0 bg-gradient-to-r from-pink-500 via-rose-400 to-amber-300 rounded-full transition-all duration-300"></div>
+                    </div>
+                </div>
+
+                <div class="w-full space-y-2">
+                    <button onclick="runLoveMeterOverdrive()" id="loveMeterBtn" class="w-full py-3.5 rounded-2xl bg-gradient-to-r from-rose-500 via-pink-500 to-amber-400 font-bold text-xs sm:text-sm text-white shadow-lg active:scale-95 transition">
+                        <i class="fa-solid fa-heart-pulse mr-1"></i> Tap to Measure My Love!
+                    </button>
+                </div>
+            </section>
+
+            <!-- STEP 5: VERTICAL REELS PLAYER #1 (CANDID SHY SMILE BEHIND PHONE VIDEO) -->
+            <section id="step-5" class="step-view hidden flex-1 flex-col items-center justify-between px-5 py-2 text-center">
+                <div>
+                    <span class="px-3 py-1 rounded-full glass-pill text-[10px] uppercase tracking-widest text-pink-300 font-semibold">
+                        Step 5 of 10 • Candid Reel #1
+                    </span>
+                    <h2 class="font-serif text-xl sm:text-2xl font-bold mt-1 shimmer-text">
+                        That Shy Smile Behind Your Phone 🙈💕
+                    </h2>
+                </div>
+
+                <!-- Vertical Video Player Card #1 -->
+                <div ondblclick="sendLoveExplosion(event)" class="relative w-full max-w-[275px] h-[310px] my-auto rounded-3xl overflow-hidden glass-card border-2 border-pink-400/40 shadow-2xl group">
+                    <!-- Top Reels Controls -->
+                    <div class="absolute top-3 inset-x-3 z-30 flex items-center justify-between">
+                        <button onclick="toggleReelSound('media-video1', 'v1SoundIcon', event)" class="px-2.5 py-1 rounded-full bg-black/75 text-white text-[10px] font-semibold border border-white/20 flex items-center gap-1">
+                            <i id="v1SoundIcon" class="fa-solid fa-volume-high text-amber-300"></i>
+                            <span>Reel Audio</span>
+                        </button>
+                        <button onclick="triggerQuickUpload('video1', event)" class="edit-trigger px-2.5 py-1 rounded-full bg-pink-600/90 text-white text-[10px] font-bold border border-amber-300/50 hover:bg-pink-500 shadow">
+                            <i class="fa-solid fa-video mr-1"></i>Load Shy Smile Video
+                        </button>
+                    </div>
+
+                    <!-- Actual HTML5 Video Element #1 -->
+                    <video id="media-video1" src="telegram_video_2.mp4" class="hidden w-full h-full object-cover bg-black" playsinline loop controls></video>
+
+                    <!-- Bespoke Candid Shy Smile Illustrated Montage (Shown until video file is loaded/playing) -->
+                    <div id="video1Fallback" class="w-full h-full relative flex flex-col items-center justify-center overflow-hidden">
+                        <img id="media-video1-poster" src="" class="absolute inset-0 w-full h-full object-cover" alt="Shy Smile Candid Reel">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-black/40"></div>
+                        <div class="relative z-10 px-4 text-center mt-6">
+                            <div onclick="triggerQuickUpload('video1', event)" class="edit-trigger cursor-pointer px-3.5 py-2 mx-auto mb-2 rounded-2xl bg-pink-500/90 border border-amber-300 inline-flex items-center gap-1.5 text-white text-xs font-bold shadow-lg active:scale-95 transition">
+                                <i class="fa-solid fa-circle-play"></i>
+                                <span>Tap to Attach Shy Smile Video</span>
+                            </div>
+                            <div class="w-12 h-12 rounded-full bg-pink-500/30 border border-amber-300/60 flex items-center justify-center mx-auto mb-2 text-amber-300 shadow-lg animate-pulse">
+                                <i class="fa-solid fa-heart text-xl"></i>
+                            </div>
+                            <p class="text-xs text-amber-200 font-semibold">"Band kar le..." 🙈📱</p>
+                            <p class="text-[10px] text-pink-100/80 mt-0.5">Double-tap screen to shower hearts!</p>
+                        </div>
+                    </div>
+
+                    <!-- Reels Overlay Caption -->
+                    <div class="absolute bottom-3 inset-x-3 z-20 text-left pointer-events-none bg-black/55 backdrop-blur-sm p-2.5 rounded-2xl border border-white/10">
+                        <span class="px-2 py-0.5 rounded bg-pink-500 text-[9px] font-bold uppercase">Candid Reel • Blue Shirt</span>
+                        <p id="caption-video1" class="text-[11px] font-semibold text-white mt-1 leading-snug drop-shadow">
+                            When you shyly hide your smile behind your phone... my favorite view in the whole world 💕
+                        </p>
+                    </div>
+                </div>
+
+                <button onclick="goToStep(6)" class="w-full py-3 rounded-2xl bg-gradient-to-r from-pink-500 to-amber-500 font-semibold text-xs sm:text-sm text-white shadow-lg active:scale-95 transition">
+                    Next: Gold Scratch Surprise (Photo #2) <i class="fa-solid fa-arrow-right ml-1"></i>
+                </button>
+            </section>
+
+            <!-- STEP 6: SCRATCH-TO-REVEAL SECRET PHOTO (PHOTO #2: image_2.png - Black Floral Saree Side Profile) -->
+            <section id="step-6" class="step-view hidden flex-1 flex-col items-center justify-between px-5 py-2 text-center">
+                <div>
+                    <span class="px-3 py-1 rounded-full glass-pill text-[10px] uppercase tracking-widest text-amber-300 font-semibold">
+                        Step 6 of 10 • Golden Mystery (Photo #2)
+                    </span>
+                    <h2 class="font-serif text-xl sm:text-2xl font-bold mt-1 shimmer-text">
+                        Scratch The Gold Foil ✨
+                    </h2>
+                    <p class="text-[11px] text-pink-200/80">
+                        Rub with your finger to reveal your Black Floral Saree portrait!
+                    </p>
+                </div>
+
+                <!-- Scratch Card Container -->
+                <div class="relative my-auto w-full max-w-[275px] h-[285px] rounded-3xl overflow-hidden glass-card border-2 border-amber-300/50 shadow-2xl">
+                    <button onclick="triggerQuickUpload('photo2', event)" class="edit-trigger absolute top-3 right-3 z-30 px-2.5 py-1 rounded-full bg-black/75 text-amber-300 text-[10px] font-semibold border border-amber-300/40">
+                        <i class="fa-solid fa-camera mr-1"></i>Swap Photo #2
+                    </button>
+
+                    <!-- Underlying Photo #2 (image_2.png) -->
+                    <img id="media-photo2" src="image_2.png" onerror="handleImageFallback(this, 'photo2')" alt="Annu Black Floral Saree Side Profile" class="w-full h-full object-cover object-top">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/95 via-black/70 to-transparent p-3 text-center z-10">
+                        <p id="caption-photo2" class="font-script text-lg text-amber-300 leading-snug">
+                            Graceful in every frame — looking like a dream in your black floral saree 🌸
+                        </p>
+                    </div>
+
+                    <!-- Interactive Scratch Foil Canvas -->
+                    <canvas id="scratchCanvas" class="absolute inset-0 w-full h-full cursor-pointer z-20 touch-none"></canvas>
+                </div>
+
+                <div class="w-full flex gap-2">
+                    <button onclick="resetScratchCard()" class="px-3.5 py-3 rounded-2xl glass-pill text-xs text-pink-200">
+                        Reset Foil
+                    </button>
+                    <button onclick="goToStep(7)" class="flex-1 py-3 rounded-2xl bg-gradient-to-r from-pink-500 to-amber-500 font-semibold text-xs sm:text-sm text-white shadow-lg active:scale-95 transition">
+                        Next: Our Cute Puppy Filter Reel 🐶 <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- STEP 7: VERTICAL REELS PLAYER #2 (CUTE PUPPY GLASSES FILTER VIDEO TOGETHER) -->
+            <section id="step-7" class="step-view hidden flex-1 flex-col items-center justify-between px-5 py-2 text-center">
+                <div>
+                    <span class="px-3 py-1 rounded-full glass-pill text-[10px] uppercase tracking-widest text-pink-300 font-semibold">
+                        Step 7 of 10 • Our Together Reel #2
+                    </span>
+                    <h2 class="font-serif text-xl sm:text-2xl font-bold mt-1 shimmer-text">
+                        Cute Puppy Ears & Glasses Filter 🐶👓
+                    </h2>
+                </div>
+
+                <!-- Vertical Video Player Card #2 -->
+                <div ondblclick="sendLoveExplosion(event)" class="relative w-full max-w-[275px] h-[310px] my-auto rounded-3xl overflow-hidden glass-card border-2 border-amber-300/45 shadow-2xl group">
+                    <!-- Top Reels Controls -->
+                    <div class="absolute top-3 inset-x-3 z-30 flex items-center justify-between">
+                        <button onclick="toggleReelSound('media-video2', 'v2SoundIcon', event)" class="px-2.5 py-1 rounded-full bg-black/75 text-white text-[10px] font-semibold border border-white/20 flex items-center gap-1">
+                            <i id="v2SoundIcon" class="fa-solid fa-volume-high text-amber-300"></i>
+                            <span>Reel Audio</span>
+                        </button>
+                        <button onclick="triggerQuickUpload('video2', event)" class="edit-trigger px-2.5 py-1 rounded-full bg-amber-400 text-slate-950 text-[10px] font-bold hover:bg-amber-300 shadow">
+                            <i class="fa-solid fa-video mr-1"></i>Load Puppy Filter Video
+                        </button>
+                    </div>
+
+                    <!-- Actual HTML5 Video Element #2 -->
+                    <video id="media-video2" src="telegram_video.mp4" class="hidden w-full h-full object-cover bg-black" playsinline loop controls></video>
+
+                    <!-- Bespoke Puppy Filter Together Illustrated Montage -->
+                    <div id="video2Fallback" class="w-full h-full relative flex flex-col items-center justify-center overflow-hidden">
+                        <img id="media-video2-poster" src="" class="absolute inset-0 w-full h-full object-cover" alt="Cute Puppy Filter Together">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-black/40"></div>
+                        <div class="relative z-10 px-4 text-center mt-8">
+                            <div onclick="triggerQuickUpload('video2', event)" class="edit-trigger cursor-pointer px-3.5 py-2 mx-auto mb-2 rounded-2xl bg-amber-400 text-slate-950 inline-flex items-center gap-1.5 text-xs font-bold shadow-lg active:scale-95 transition">
+                                <i class="fa-solid fa-circle-play"></i>
+                                <span>Tap to Attach Puppy Filter Reel</span>
+                            </div>
+                            <div class="w-12 h-12 rounded-full bg-amber-400/25 border border-amber-300/60 flex items-center justify-center mx-auto mb-2 text-amber-300 shadow-lg animate-bounce">
+                                <i class="fa-solid fa-face-grin-hearts text-xl"></i>
+                            </div>
+                            <p class="text-xs text-amber-200 font-semibold">Yellow Tee & Blue Shirt Cuties 🐶👓</p>
+                            <p class="text-[10px] text-pink-100/80 mt-0.5">Double-tap anywhere to send love!</p>
+                        </div>
+                    </div>
+
+                    <!-- Reels Overlay Caption -->
+                    <div class="absolute bottom-3 inset-x-3 z-20 text-left pointer-events-none bg-black/55 backdrop-blur-sm p-2.5 rounded-2xl border border-white/10">
+                        <span class="px-2 py-0.5 rounded bg-amber-400 text-slate-950 text-[9px] font-bold uppercase">Us Together • Filter Fun</span>
+                        <p id="caption-video2" class="text-[11px] font-semibold text-white mt-1 leading-snug drop-shadow">
+                            Goofy filters, cute pixel glasses, and endless smiles together — us forever 🐶👓❤️
+                        </p>
+                    </div>
+                </div>
+
+                <button onclick="goToStep(8)" class="w-full py-3 rounded-2xl bg-gradient-to-r from-pink-500 to-amber-500 font-semibold text-xs sm:text-sm text-white shadow-lg active:scale-95 transition">
+                    Open 3D Memory Deck (All 5 Memories) <i class="fa-solid fa-layer-group ml-1"></i>
+                </button>
+            </section>
+
+            <!-- STEP 8: 3D SWIPEABLE MEMORY DECK (ALL 3 PHOTOS + BOTH VIDEOS, LEAD BY image_3.png) -->
+            <section id="step-8" class="step-view hidden flex-1 flex-col items-center justify-between px-5 py-2 text-center">
+                <div>
+                    <span class="px-3 py-1 rounded-full glass-pill text-[10px] uppercase tracking-widest text-pink-300 font-semibold">
+                        Step 8 of 10 • 3D Memory Album
+                    </span>
+                    <h2 class="font-serif text-xl sm:text-2xl font-bold mt-1 shimmer-text">
+                        Every Shade of My Queen 👑
+                    </h2>
+                    <p class="text-[11px] text-pink-200/80">Tap card or arrows to flip through all 3 photos & 2 videos</p>
+                </div>
+
+                <!-- 3D Stack Container -->
+                <div class="relative w-full max-w-[285px] h-[300px] my-auto flex items-center justify-center">
+                    <div id="carouselDeck" class="relative w-full h-full"></div>
+                </div>
+
+                <div class="w-full space-y-2">
+                    <div class="flex items-center justify-between gap-2">
+                        <button onclick="prevGallerySlide()" class="glass-pill px-4 py-2 rounded-xl text-xs text-pink-200 active:scale-95">
+                            <i class="fa-solid fa-chevron-left mr-1"></i>Prev
+                        </button>
+                        <span id="galleryCounter" class="text-xs font-bold text-amber-300">1 / 5</span>
+                        <button onclick="nextGallerySlide()" class="glass-pill px-4 py-2 rounded-xl text-xs text-pink-200 active:scale-95">
+                            Next<i class="fa-solid fa-chevron-right ml-1"></i>
+                        </button>
+                    </div>
+                    <button onclick="goToStep(9)" class="w-full py-3 rounded-2xl bg-gradient-to-r from-pink-500 to-amber-500 font-semibold text-xs sm:text-sm text-white shadow-lg active:scale-95 transition">
+                        10 Reasons Why I Adore You <i class="fa-solid fa-heart ml-1"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- STEP 9: 10 GLOWING HEART ORBS — 10 REASONS WHY I LOVE ANNU PUNIA -->
+            <section id="step-9" class="step-view hidden flex-1 flex-col items-center justify-between px-5 py-2 text-center">
+                <div>
+                    <span class="px-3 py-1 rounded-full glass-pill text-[10px] uppercase tracking-widest text-amber-300 font-semibold">
+                        Step 9 of 10 • 10 Heartfelt Reasons
+                    </span>
+                    <h2 class="font-serif text-xl sm:text-2xl font-bold mt-1 shimmer-text">
+                        10 Things I Adore About You 💖
+                    </h2>
+                    <p class="text-[11px] text-pink-200/80">Tap each glowing heart orb to read your personal note</p>
+                </div>
+
+                <!-- Active Reason Display Card -->
+                <div class="glass-card w-full rounded-3xl p-4 my-2 border border-pink-400/40 min-h-[125px] flex flex-col items-center justify-center">
+                    <span id="reasonBadge" class="text-[10px] uppercase tracking-widest text-amber-300 font-bold mb-1">
+                        Reason #1 of 10 • For Annu Punia
+                    </span>
+                    <p id="reasonText" class="font-serif italic text-xs sm:text-sm text-white leading-relaxed">
+                        "The way that loose strand of hair frames your face with your silver jhumkas in your white floral suit—you look like an angel on earth."
+                    </p>
+                </div>
+
+                <!-- 10 Interactive Heart Orbs Grid -->
+                <div id="reasonsGrid" class="grid grid-cols-5 gap-2.5 w-full my-auto py-1">
+                    <!-- Injected via JS -->
+                </div>
+
+                <button onclick="goToStep(10)" class="w-full py-3 rounded-2xl bg-gradient-to-r from-pink-500 to-amber-500 font-semibold text-xs sm:text-sm text-white shadow-lg active:scale-95 transition">
+                    Step 10: Birthday Cake, Letter & Memory Wall 🎂 <i class="fa-solid fa-arrow-right ml-1"></i>
+                </button>
+            </section>
+
+            <!-- STEP 10: INTERACTIVE 3-CANDLE BIRTHDAY CAKE + ROYAL LOVE LETTER + FULL 5-MEMORY WALL -->
+            <section id="step-10" class="step-view hidden flex-1 flex-col justify-between px-4 py-1.5 overflow-hidden">
+                <div class="text-center">
+                    <span class="px-3 py-0.5 rounded-full glass-pill text-[10px] uppercase tracking-widest text-amber-300 font-semibold">
+                        Step 10 of 10 • Grand Birthday Finale
+                    </span>
+                    <h2 id="cakeHeadline" class="font-serif text-xl font-bold mt-0.5 shimmer-text">
+                        Blow Your Candles & Read My Letter 🎂❤️
+                    </h2>
+                </div>
+
+                <!-- Scrollable Finale Container: Interactive Cake + Love Letter + 5-Media Wall -->
+                <div class="glass-card rounded-3xl p-3.5 my-1.5 flex-1 overflow-y-auto custom-scroll text-left space-y-3.5 border border-pink-300/35">
+                    
+                    <!-- Interactive 3-Candle Birthday Cake Box -->
+                    <div class="rounded-2xl bg-black/35 border border-pink-400/30 p-3 text-center flex flex-col items-center">
+                        <div id="birthdayBanner" class="hidden mb-2 px-3 py-1 rounded-xl bg-amber-400/20 border border-amber-300/50 animate-bounce">
+                            <p class="font-script text-lg text-amber-300">Wish Granted! Happy Birthday Annu Punia! 🎉</p>
+                        </div>
+
+                        <!-- 3 Flickering Candles -->
+                        <div class="flex items-end justify-center gap-6 mb-[-5px] z-20 mt-1">
+                            <div onclick="blowSingleCandle(0)" class="cursor-pointer flex flex-col items-center">
+                                <div id="flame-0" class="flame w-4 h-7 rounded-full bg-gradient-to-t from-orange-500 via-amber-300 to-white shadow-[0_0_18px_#ffae00] mb-0.5"></div>
+                                <div class="w-3 h-9 rounded-t-sm bg-gradient-to-b from-pink-200 to-pink-400 border border-white/40"></div>
+                            </div>
+                            <div onclick="blowSingleCandle(1)" class="cursor-pointer flex flex-col items-center">
+                                <div id="flame-1" class="flame w-5 h-8 rounded-full bg-gradient-to-t from-orange-500 via-amber-300 to-white shadow-[0_0_22px_#ffae00] mb-0.5"></div>
+                                <div class="w-3.5 h-11 rounded-t-sm bg-gradient-to-b from-amber-100 to-amber-300 border border-white/50"></div>
+                            </div>
+                            <div onclick="blowSingleCandle(2)" class="cursor-pointer flex flex-col items-center">
+                                <div id="flame-2" class="flame w-4 h-7 rounded-full bg-gradient-to-t from-orange-500 via-amber-300 to-white shadow-[0_0_18px_#ffae00] mb-0.5"></div>
+                                <div class="w-3 h-9 rounded-t-sm bg-gradient-to-b from-pink-200 to-pink-400 border border-white/40"></div>
+                            </div>
+                        </div>
+
+                        <!-- Cake Tiers -->
+                        <div class="w-36 h-10 bg-gradient-to-b from-pink-300 via-pink-400 to-rose-500 rounded-t-xl shadow border-t-2 border-pink-100 flex items-center justify-center">
+                            <span class="font-script text-white text-base drop-shadow">Annu Punia ❤️</span>
+                        </div>
+                        <div class="w-48 h-11 bg-gradient-to-b from-rose-500 via-rose-600 to-rose-800 rounded-t-lg shadow-xl border-t-2 border-pink-200 flex items-center justify-around px-3">
+                            <span class="text-[10px]">🍓</span><span class="text-[10px]">✨</span><span class="text-[10px]">👑</span><span class="text-[10px]">✨</span><span class="text-[10px]">🍓</span>
+                        </div>
+                        <div class="w-56 h-2.5 bg-gradient-to-r from-amber-200 via-yellow-400 to-amber-300 rounded-full shadow"></div>
+
+                        <button id="blowBtn" onclick="blowAllCandles()" class="mt-2.5 px-4 py-1.5 rounded-xl bg-gradient-to-r from-pink-500 to-amber-500 font-bold text-[11px] text-white shadow active:scale-95 transition">
+                            <i class="fa-solid fa-wind mr-1"></i> Tap to Blow Out All 3 Candles 🎂
+                        </button>
+                    </div>
+
+                    <!-- Royal Birthday Love Letter -->
+                    <div class="space-y-2 text-xs text-pink-50/95 leading-relaxed pt-1">
+                        <div class="flex items-center justify-between border-b border-pink-300/20 pb-1.5">
+                            <div>
+                                <p class="font-script text-2xl text-amber-300">My Dearest Annu Punia,</p>
+                                <p class="text-[10px] text-pink-200/70">My Love, My Best Friend, My Forever Queen ✨</p>
+                            </div>
+                            <div class="text-2xl animate-pulse">💌</div>
+                        </div>
+                        <p>
+                            Happy Birthday to the girl who owns my entire heart! <strong class="text-amber-300">Annu Punia, my love</strong>, whether you are glowing in your white floral dupatta and silver jhumkas, standing gracefully by the window in your black and pink floral saree, or shyly hiding your smile behind your phone in your blue shirt—every single version of you takes my breath away.
+                        </p>
+                        <p>
+                            From our silly puppy-ears filter videos to our quietest moments together, you make life feel like the sweetest movie. May this year bring you endless laughter, royal success, and every dream your beautiful heart desires.
+                        </p>
+                        <p class="font-serif italic text-amber-200">
+                            Forever & always yours, with infinite love ❤️
+                        </p>
+                    </div>
+
+                    <!-- Complete 5-Memory Scrapbook Wall (3 Photos + 2 Videos) -->
+                    <div class="pt-2 border-t border-pink-300/20">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-[10px] uppercase tracking-wider text-amber-300 font-bold">Our 3 Photos & 2 Videos Wall 📸🎬</span>
+                            <button onclick="openStudioModal()" class="edit-trigger text-[10px] text-pink-300 underline">Customize Media</button>
+                        </div>
+                        <div id="finaleMediaWall" class="grid grid-cols-3 gap-1.5">
+                            <!-- Populated dynamically with all 3 photos & 2 videos -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infinite Hugs & Finale Fireworks -->
+                <div class="w-full">
+                    <div class="glass-pill rounded-2xl p-2 flex items-center justify-between">
+                        <div class="pl-2 text-left">
+                            <p class="text-[10px] text-pink-200/80">Infinite Birthday Hugs & Kisses</p>
+                            <p class="text-xs font-bold text-white"><span id="hugCount" class="text-amber-300">1,430</span> Sent to Annu</p>
+                        </div>
+                        <button onclick="sendLoveExplosion(event)" class="px-3.5 py-2 rounded-xl bg-gradient-to-r from-pink-500 to-rose-500 text-xs font-bold text-white shadow active:scale-90 transition">
+                            <i class="fa-solid fa-heart mr-1"></i>Send Love
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Bottom Reels Step Controller Bar -->
+        <footer class="px-4 py-2.5 flex items-center justify-between border-t border-white/10 bg-black/45 backdrop-blur-md z-30">
+            <button onclick="prevStep()" id="prevStepBtn" class="glass-pill px-3 py-1.5 rounded-full text-xs font-medium text-pink-200 hover:text-white active:scale-95 transition flex items-center gap-1">
+                <i class="fa-solid fa-chevron-left text-[10px]"></i> Prev
+            </button>
+
+            <div class="flex items-center gap-3">
+                <button onclick="sendLoveExplosion(event)" class="text-pink-400 hover:text-pink-300 active:scale-125 transition text-base" title="Send Floating Hearts">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+                <span id="footerStepTracker" class="text-[11px] font-semibold text-pink-100/90">
+                    1 / 10
+                </span>
+                <button onclick="triggerGrandFinale()" class="text-amber-300 hover:text-amber-200 active:scale-125 transition text-base" title="Launch Fireworks">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </button>
+            </div>
+
+            <button onclick="nextStep()" id="nextStepBtn" class="px-3.5 py-1.5 rounded-full bg-gradient-to-r from-pink-500 to-amber-500 text-xs font-bold text-white active:scale-95 transition flex items-center gap-1 shadow">
+                Next <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            </button>
+        </footer>
+
+    </main>
+
+    <script>
+        /* =====================================================
+           1. MEDIA SLOTS STATE & BESPOKE ARTISTIC ILLUSTRATIONS
+              FOR THE EXACT 3 PHOTOS & 2 VIDEOS OF ANNU PUNIA
+        ===================================================== */
+        const TOTAL_STEPS = 10;
+        let currentStep = 1;
+        let activeQuickSlotId = null;
+        let presentationLocked = true;
+        window.__EMBEDDED_GIFT_MEDIA__ = window.__EMBEDDED_GIFT_MEDIA__ || null;
+
+        // Bespoke SVG portrait illustrations tailored to the exact 3 photos & 2 videos
+        function getBespokeFallbackSvg(slotId) {
+            if (slotId === 'photo1') {
+                // White floral suit + silver jhumkas + soft smile + loose hair strand
+                const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750" viewBox="0 0 600 750">
+                    <defs>
+                        <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#4a153b"/><stop offset="100%" stop-color="#1a0618"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="600" height="750" fill="url(#bg1)"/>
+                    <circle cx="300" cy="270" r="155" fill="rgba(255,255,255,0.08)"/>
+                    <path d="M160 540 Q300 430 440 540 L480 750 L120 750 Z" fill="#fdf8fa"/>
+                    <circle cx="220" cy="560" r="18" fill="#f4a3c4" opacity="0.6"/>
+                    <circle cx="370" cy="580" r="22" fill="#f4a3c4" opacity="0.6"/>
+                    <circle cx="300" cy="260" r="95" fill="#fbd7c8"/>
+                    <path d="M200 240 Q300 130 400 240 Q395 170 300 165 Q210 170 200 240 Z" fill="#1f161e"/>
+                    <path d="M270 175 Q320 260 390 305" stroke="#1f161e" stroke-width="6" fill="none"/>
+                    <circle cx="395" cy="305" r="11" fill="#d9e2ec"/><path d="M383 322 L407 322 L395 307 Z" fill="#bcccdc"/>
+                    <path d="M275 305 Q300 322 325 305" stroke="#e05368" stroke-width="5" fill="none" stroke-linecap="round"/>
+                    <rect x="60" y="610" width="480" height="90" rx="20" fill="rgba(0,0,0,0.65)"/>
+                    <text x="300" y="650" fill="#ffd166" font-size="23" font-family="Georgia, serif" font-weight="bold" text-anchor="middle">Annu • White Dupatta &amp; Silver Jhumkas ✨</text>
+                    <text x="300" y="682" fill="#fbcfe8" font-size="16" font-family="sans-serif" text-anchor="middle">The Prettiest Smile in the World ❤️</text>
+                </svg>`;
+                return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+            }
+            if (slotId === 'photo2') {
+                // Black floral saree side profile by tall glass windows + cute hair clip
+                const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750" viewBox="0 0 600 750">
+                    <defs>
+                        <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#1e293b"/><stop offset="50%" stop-color="#3b0d2c"/><stop offset="100%" stop-color="#0f0514"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="600" height="750" fill="url(#bg2)"/>
+                    <rect x="40" y="40" width="180" height="520" rx="8" fill="rgba(167,243,208,0.12)" stroke="rgba(255,255,255,0.2)"/>
+                    <path d="M220 580 Q310 350 400 580 Z" fill="#18121e"/>
+                    <circle cx="290" cy="460" r="7" fill="#ff5ca1"/><circle cx="330" cy="490" r="6" fill="#fb923c"/><circle cx="310" cy="530" r="7" fill="#ff5ca1"/><circle cx="350" cy="540" r="6" fill="#4ade80"/>
+                    <circle cx="315" cy="255" r="68" fill="#fbd7c8"/>
+                    <path d="M250 260 Q255 175 340 195 Q300 280 265 340 Z" fill="#1a121b"/>
+                    <rect x="275" y="218" width="18" height="8" rx="4" fill="#f472b6"/>
+                    <rect x="50" y="610" width="500" height="90" rx="20" fill="rgba(0,0,0,0.68)"/>
+                    <text x="300" y="650" fill="#ffd166" font-size="22" font-family="Georgia, serif" font-weight="bold" text-anchor="middle">Annu • Black Floral Saree Grace 🌸</text>
+                    <text x="300" y="682" fill="#fbcfe8" font-size="16" font-family="sans-serif" text-anchor="middle">Looking Like a Royal Dream by the Window</text>
+                </svg>`;
+                return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+            }
+            if (slotId === 'photo3') {
+                // Sheer black floral saree with pink trim clasping hands by glass walkway
+                const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750" viewBox="0 0 600 750">
+                    <defs>
+                        <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#3b0728"/><stop offset="100%" stop-color="#140312"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="600" height="750" fill="url(#bg3)"/>
+                    <path d="M200 600 Q300 340 410 600 Z" fill="#1c1321" stroke="#ff2a85" stroke-width="5"/>
+                    <circle cx="280" cy="450" r="7" fill="#ff2a85"/><circle cx="330" cy="470" r="7" fill="#fb923c"/><circle cx="300" cy="510" r="7" fill="#ff5ca1"/>
+                    <circle cx="300" cy="250" r="68" fill="#fbd7c8"/>
+                    <rect x="50" y="610" width="500" height="90" rx="20" fill="rgba(0,0,0,0.68)"/>
+                    <text x="300" y="650" fill="#ffd166" font-size="22" font-family="Georgia, serif" font-weight="bold" text-anchor="middle">Annu • Black &amp; Pink Floral Saree ✨</text>
+                    <text x="300" y="682" fill="#fbcfe8" font-size="16" font-family="sans-serif" text-anchor="middle">Pure Elegance in Every Single Frame 💖</text>
+                </svg>`;
+                return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+            }
+            if (slotId === 'video1') {
+                // Candid shy smile hiding behind brown phone case in light-blue shirt
+                const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750" viewBox="0 0 600 750">
+                    <defs>
+                        <linearGradient id="bgv1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#1e3a5f"/><stop offset="60%" stop-color="#4a1239"/><stop offset="100%" stop-color="#120417"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="600" height="750" fill="url(#bgv1)"/>
+                    <circle cx="300" cy="260" r="130" fill="rgba(255,255,255,0.07)"/>
+                    <path d="M170 540 Q300 430 430 540 L460 700 L140 700 Z" fill="#cbd5e1"/>
+                    <circle cx="300" cy="255" r="85" fill="#fbd7c8"/>
+                    <path d="M270 285 Q305 312 340 282" stroke="#e11d48" stroke-width="6" fill="none" stroke-linecap="round"/>
+                    <rect x="200" y="250" width="95" height="145" rx="16" fill="#6d4c41" stroke="#d7ccc8" stroke-width="3" transform="rotate(-18 245 320)"/>
+                    <circle cx="220" cy="275" r="9" fill="#263238"/><circle cx="225" cy="298" r="9" fill="#263238"/>
+                    <text x="300" y="130" fill="#ffd166" font-size="26" font-family="Georgia, serif" font-weight="bold" text-anchor="middle">Candid Reel #1 • Shy Smile 🙈📱</text>
+                </svg>`;
+                return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+            }
+            // video2: Cute Puppy Ears & Pixel Glasses Filter Together (Yellow Tee & Blue Shirt)
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="600" height="750" viewBox="0 0 600 750">
+                <defs>
+                    <linearGradient id="bgv2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#581c4f"/><stop offset="50%" stop-color="#3b0a37"/><stop offset="100%" stop-color="#14031c"/>
+                    </linearGradient>
+                </defs>
+                <rect width="600" height="750" fill="url(#bgv2)"/>
+                <path d="M80 560 Q190 450 290 560 L300 700 L60 700 Z" fill="#facc15"/>
+                <circle cx="195" cy="290" r="70" fill="#f5cba7"/>
+                <rect x="145" y="270" width="42" height="26" fill="none" stroke="#111" stroke-width="6"/>
+                <rect x="202" y="270" width="42" height="26" fill="none" stroke="#111" stroke-width="6"/>
+                <ellipse cx="195" cy="305" rx="14" ry="10" fill="#111"/>
+                <path d="M290 560 Q410 450 520 560 L540 700 L280 700 Z" fill="#cbd5e1"/>
+                <circle cx="405" cy="300" r="70" fill="#fbd7c8"/>
+                <rect x="355" y="280" width="42" height="26" fill="none" stroke="#111" stroke-width="6"/>
+                <rect x="412" y="280" width="42" height="26" fill="none" stroke="#111" stroke-width="6"/>
+                <ellipse cx="405" cy="315" rx="14" ry="10" fill="#111"/>
+                <text x="300" y="135" fill="#ffd166" font-size="25" font-family="Georgia, serif" font-weight="bold" text-anchor="middle">Reel #2 • Puppy Glasses Filter Together 🐶👓</text>
+            </svg>`;
+            return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+        }
+
+        const mediaSlots = [
+            {
+                id: 'photo1',
+                label: 'Photo #1 (Step 3) • White Floral Dupatta & Jhumkas',
+                type: 'image',
+                url: 'image.png',
+                altUrl: './image.png',
+                fallbackUrl: getBespokeFallbackSvg('photo1'),
+                caption: 'That soft smile, those pretty silver jhumkas, and the strand of hair framing your face — pure magic, Annu ✨',
+                isCustom: false,
+                dataUrl: null
+            },
+            {
+                id: 'photo2',
+                label: 'Photo #2 (Step 6) • Black Floral Saree Side Profile',
+                type: 'image',
+                url: 'image_2.png',
+                altUrl: './image_2.png',
+                fallbackUrl: getBespokeFallbackSvg('photo2'),
+                caption: 'Graceful in every frame — looking like a dream in your black floral saree by the window 🌸',
+                isCustom: false,
+                dataUrl: null
+            },
+            {
+                id: 'photo3',
+                label: 'Photo #3 (Step 8) • Black & Pink Trim Floral Saree',
+                type: 'image',
+                url: 'image_3.png',
+                altUrl: './image_3.png',
+                fallbackUrl: getBespokeFallbackSvg('photo3'),
+                caption: 'Pure elegance in your sheer black & pink floral saree — my heart skips a beat every time I look at you 💖',
+                isCustom: false,
+                dataUrl: null
+            },
+            {
+                id: 'video1',
+                label: 'Video #1 (Step 5) • Candid Shy Smile Behind Phone',
+                type: 'video',
+                url: 'telegram_video_2.mp4',
+                altUrl: 'video_2.mp4',
+                fallbackUrl: getBespokeFallbackSvg('video1'),
+                caption: 'When you shyly hide your smile behind your phone in your blue shirt... my favorite view in the whole world 💕',
+                isCustom: false,
+                dataUrl: null
+            },
+            {
+                id: 'video2',
+                label: 'Video #2 (Step 7) • Cute Puppy Ears & Glasses Filter Us',
+                type: 'video',
+                url: 'telegram_video.mp4',
+                altUrl: 'video.mp4',
+                fallbackUrl: getBespokeFallbackSvg('video2'),
+                caption: 'Goofy puppy filters, cute pixel glasses, and endless smiles together — us forever 🐶👓❤️',
+                isCustom: false,
+                dataUrl: null
+            }
+        ];
+
+        function handleImageFallback(imgEl, slotId) {
+            const slot = mediaSlots.find(s => s.id === slotId);
+            if (!slot) return;
+            if (!imgEl.dataset.triedAlt && slot.altUrl && imgEl.src !== slot.altUrl) {
+                imgEl.dataset.triedAlt = '1';
+                imgEl.src = slot.altUrl;
+                return;
+            }
+            if (imgEl.src !== slot.fallbackUrl) {
+                imgEl.src = slot.fallbackUrl;
+            }
+        }
+
+        function blobToDataURL(blob) {
+            return new Promise((resolve) => {
+                const reader = new FileReader();
+                reader.onloadend = () => resolve(reader.result);
+                reader.onerror = () => resolve(null);
+                reader.readAsDataURL(blob);
+            });
+        }
+
+        /* IndexedDB Helper so uploaded Photos & Videos stay saved */
+        let dbInstance = null;
+        function initMediaDB() {
+            return new Promise((resolve) => {
+                try {
+                    const req = indexedDB.open('AnnuBirthdayReelDB_v2', 1);
+                    req.onupgradeneeded = (e) => {
+                        const db = e.target.result;
+                        if (!db.objectStoreNames.contains('mediaStore')) {
+                            db.createObjectStore('mediaStore', { keyPath: 'id' });
+                        }
+                    };
+                    req.onsuccess = (e) => {
+                        dbInstance = e.target.result;
+                        resolve(dbInstance);
+                    };
+                    req.onerror = () => resolve(null);
+                } catch (err) {
+                    resolve(null);
+                }
+            });
+        }
+
+        function saveSlotToDB(slotId, fileBlob, fileType, caption) {
+            if (!dbInstance) return;
+            try {
+                const tx = dbInstance.transaction('mediaStore', 'readwrite');
+                tx.objectStore('mediaStore').put({
+                    id: slotId,
+                    blob: fileBlob,
+                    type: fileType,
+                    caption: caption
+                });
+            } catch (e) {}
+        }
+
+        function loadSlotsFromDB() {
+            return new Promise((resolve) => {
+                // First check if this is an exported standalone HTML with embedded media
+                if (window.__EMBEDDED_GIFT_MEDIA__) {
+                    Object.keys(window.__EMBEDDED_GIFT_MEDIA__).forEach(slotId => {
+                        const item = window.__EMBEDDED_GIFT_MEDIA__[slotId];
+                        const slot = mediaSlots.find(s => s.id === slotId);
+                        if (slot && item && item.dataUrl) {
+                            slot.url = item.dataUrl;
+                            slot.dataUrl = item.dataUrl;
+                            slot.type = item.type || slot.type;
+                            slot.caption = item.caption || slot.caption;
+                            slot.isCustom = true;
+                        }
+                    });
+                    const setupBtn = document.getElementById('senderSetupBtn');
+                    if (setupBtn) setupBtn.style.display = 'none';
+                    return resolve();
+                }
+
+                if (!dbInstance) return resolve();
+                try {
+                    const tx = dbInstance.transaction('mediaStore', 'readonly');
+                    const store = tx.objectStore('mediaStore');
+                    const req = store.getAll();
+                    req.onsuccess = async () => {
+                        const records = req.result || [];
+                        for (const rec of records) {
+                            const slot = mediaSlots.find(s => s.id === rec.id);
+                            if (slot && rec.blob) {
+                                slot.url = URL.createObjectURL(rec.blob);
+                                slot.dataUrl = await blobToDataURL(rec.blob);
+                                slot.type = rec.type;
+                                slot.isCustom = true;
+                                if (rec.caption) slot.caption = rec.caption;
+                            }
+                        }
+                        resolve();
+                    };
+                    req.onerror = () => resolve();
+                } catch (e) {
+                    resolve();
+                }
+            });
+        }
+
+        /* =====================================================
+           2. STUDIO UPLOADER, VIDEO FALLBACKS & STANDALONE HTML EXPORTER
+        ===================================================== */
+        function bindVideoElement(videoId, fallbackId, posterId, slot) {
+            const vidEl = document.getElementById(videoId);
+            const fallbackEl = document.getElementById(fallbackId);
+            const posterEl = document.getElementById(posterId);
+            if (!vidEl || !slot) return;
+
+            if (posterEl) posterEl.src = slot.fallbackUrl;
+
+            if (slot.type === 'video') {
+                vidEl.dataset.triedAlt = '';
+                vidEl.src = slot.url;
+                vidEl.onloadeddata = () => {
+                    vidEl.classList.remove('hidden');
+                    if (fallbackEl) fallbackEl.classList.add('hidden');
+                };
+                vidEl.onerror = () => {
+                    if (!vidEl.dataset.triedAlt && slot.altUrl && vidEl.src !== slot.altUrl) {
+                        vidEl.dataset.triedAlt = '1';
+                        vidEl.src = slot.altUrl;
+                        return;
+                    }
+                    vidEl.classList.add('hidden');
+                    if (fallbackEl) fallbackEl.classList.remove('hidden');
+                };
+            } else {
+                vidEl.pause();
+                vidEl.classList.add('hidden');
+                if (fallbackEl) fallbackEl.classList.remove('hidden');
+                if (posterEl) posterEl.src = slot.url;
+            }
+        }
+        async function handleQuickSlotFile(e) {
+            const file = e.target.files && e.target.files[0];
+            if (!file || !activeQuickSlotId) return;
+
+            const slot = mediaSlots.find(s => s.id === activeQuickSlotId);
+            if (!slot) return;
+
+            const isVideo = file.type.startsWith('video/');
+            slot.type = isVideo ? 'video' : 'image';
+            slot.url = URL.createObjectURL(file);
+            slot.dataUrl = await blobToDataURL(file);
+            slot.isCustom = true;
+
+            saveSlotToDB(slot.id, file, slot.type, slot.caption);
+            refreshMediaOnPage();
+            if (!document.getElementById('studioModal').classList.contains('hidden')) {
+                renderStudioSlotList();
+            }
+            spawnFloatingCompliment(`Updated ${slot.label.split('•')[0]}! ✨`);
+        }
+
+        async function handleBulkUpload(e) {
+            const files = Array.from(e.target.files || []);
+            if (!files.length) return;
+
+            let vidIdx = 0;
+            let imgIdx = 0;
+            const imageSlotOrder = ['photo1', 'photo2', 'photo3'];
+            const videoSlotOrder = ['video1', 'video2'];
+
+            for (const file of files) {
+                const isVideo = file.type.startsWith('video/');
+                let targetSlotId = null;
+
+                if (isVideo && vidIdx < videoSlotOrder.length) {
+                    targetSlotId = videoSlotOrder[vidIdx++];
+                } else if (!isVideo && imgIdx < imageSlotOrder.length) {
+                    targetSlotId = imageSlotOrder[imgIdx++];
+                } else if (imgIdx < imageSlotOrder.length) {
+                    targetSlotId = imageSlotOrder[imgIdx++];
+                } else if (vidIdx < videoSlotOrder.length) {
+                    targetSlotId = videoSlotOrder[vidIdx++];
+                }
+
+                if (targetSlotId) {
+                    const slot = mediaSlots.find(s => s.id === targetSlotId);
+                    if (slot) {
+                        slot.type = isVideo ? 'video' : 'image';
+                        slot.url = URL.createObjectURL(file);
+                        slot.dataUrl = await blobToDataURL(file);
+                        slot.isCustom = true;
+                        saveSlotToDB(slot.id, file, slot.type, slot.caption);
+                    }
+                }
+            }
+
+            if (!document.getElementById('studioModal').classList.contains('hidden')) {
+                renderStudioSlotList();
+            }
+            refreshMediaOnPage();
+            spawnConfettiBurst(window.innerWidth / 2, window.innerHeight / 2, 40);
+            spawnFloatingCompliment(`Loaded ${files.length} Memories of Annu! ❤️`);
+        }
+
+        async function exportSingleShareableHTML() {
+            const btn = document.getElementById('exportGiftBtn');
+            const origHtml = btn.innerHTML;
+            btn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i> Packing Annu's Gift File...`;
+
+            try {
+                const embeddedPayload = {};
+                for (const slot of mediaSlots) {
+                    let dataUri = slot.dataUrl;
+                    if (!dataUri && slot.url && !slot.url.startsWith('data:')) {
+                        try {
+                            const resp = await fetch(slot.url);
+                            if (resp.ok) {
+                                const b = await resp.blob();
+                                dataUri = await blobToDataURL(b);
+                            }
+                        } catch (err) {}
+                    }
+                    if (dataUri) {
+                        embeddedPayload[slot.id] = {
+                            type: slot.type,
+                            dataUrl: dataUri,
+                            caption: slot.caption
+                        };
+                    }
+                }
+
+                let fullHtml = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+                const payloadScript = `window.__EMBEDDED_GIFT_MEDIA__ = ${JSON.stringify(embeddedPayload)};`;
+                fullHtml = fullHtml.replace(
+                    'window.__EMBEDDED_GIFT_MEDIA__ = window.__EMBEDDED_GIFT_MEDIA__ || null;',
+                    payloadScript
+                );
+
+                const blob = new Blob([fullHtml], { type: 'text/html;charset=utf-8' });
+                const downloadUrl = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = downloadUrl;
+                a.download = 'Happy-Birthday-Annu-Punia.html';
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+                setTimeout(() => URL.revokeObjectURL(downloadUrl), 5000);
+
+                spawnConfettiBurst(window.innerWidth / 2, window.innerHeight / 2, 45);
+                spawnFloatingCompliment('Downloaded Happy-Birthday-Annu-Punia.html! 🎁❤️');
+            } catch (err) {
+                spawnFloatingCompliment('Ready! Send this page to Annu ❤️');
+            } finally {
+                btn.innerHTML = origHtml;
+            }
+        }
+
+        function resetAllMedia() {
+            if (dbInstance) {
+                try {
+                    const tx = dbInstance.transaction('mediaStore', 'readwrite');
+                    tx.objectStore('mediaStore').clear();
+                } catch (e) {}
+            }
+            location.reload();
+        }
+
+        function togglePresentationLock() {
+            presentationLocked = !presentationLocked;
+            document.body.classList.toggle('presentation-locked', presentationLocked);
+
+            const lockModeIcon = document.getElementById('lockModeIcon');
+            const lockModeText = document.getElementById('lockModeText');
+
+            if (presentationLocked) {
+                if (lockModeIcon) lockModeIcon.className = 'fa-solid fa-lock text-emerald-300';
+                if (lockModeText) lockModeText.textContent = 'Gift Mode: ON (Clean UI)';
+                spawnFloatingCompliment('Gift Mode ON: Clean & Ready for Annu! 🎁');
+            } else {
+                if (lockModeIcon) lockModeIcon.className = 'fa-solid fa-lock-open text-amber-300';
+                if (lockModeText) lockModeText.textContent = 'Gift Mode: OFF (Edit Buttons Shown)';
+                spawnFloatingCompliment('Edit Buttons Visible on Screen ✨');
+            }
+        }
+
+        function openStudioModal() {
+            renderStudioSlotList();
+            const modal = document.getElementById('studioModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeStudioModal() {
+            const modal = document.getElementById('studioModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            refreshMediaOnPage();
+        }
+
+        function renderStudioSlotList() {
+            const container = document.getElementById('studioSlotList');
+            container.innerHTML = '';
+
+            mediaSlots.forEach((slot) => {
+                const row = document.createElement('div');
+                row.className = 'glass-pill rounded-2xl p-2.5 flex items-center gap-3 border border-white/15';
+
+                const previewHtml = slot.type === 'video'
+                    ? `<video src="${slot.url}" poster="${slot.fallbackUrl}" class="w-14 h-14 rounded-xl object-cover bg-black" muted playsinline></video>`
+                    : `<img src="${slot.url}" onerror="this.src='${slot.fallbackUrl}'" class="w-14 h-14 rounded-xl object-cover bg-rose-950">`;
+
+                row.innerHTML = `
+                    <div class="relative shrink-0">
+                        ${previewHtml}
+                        <span class="absolute -top-1 -right-1 px-1.5 py-0.5 rounded-full text-[9px] font-bold ${slot.isCustom ? 'bg-emerald-500 text-white' : 'bg-pink-500/80 text-white'}">
+                            ${slot.isCustom ? '✓ Loaded' : (slot.type === 'video' ? '🎥' : '📸')}
+                        </span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-xs font-bold text-amber-200 truncate">${slot.label}</p>
+                        <input type="text" value="${slot.caption.replace(/"/g, '&quot;')}" 
+                            onchange="updateSlotCaption('${slot.id}', this.value)"
+                            placeholder="Write a sweet caption for Annu..."
+                            class="mt-1 w-full bg-black/40 border border-pink-300/25 rounded-lg px-2 py-1 text-[11px] text-white focus:outline-none focus:border-pink-400">
+                    </div>
+                    <button onclick="triggerQuickUpload('${slot.id}', event)" class="shrink-0 px-3 py-2 rounded-xl bg-pink-500/30 hover:bg-pink-500/50 border border-pink-400/40 text-xs font-semibold text-white transition">
+                        <i class="fa-solid fa-upload"></i>
+                    </button>
+                `;
+                container.appendChild(row);
+            });
+        }
+
+        function updateSlotCaption(slotId, newCaption) {
+            const slot = mediaSlots.find(s => s.id === slotId);
+            if (slot) {
+                slot.caption = newCaption;
+                refreshMediaOnPage();
+            }
+        }
+
+        function triggerQuickUpload(slotId, e) {
+            if (e) e.stopPropagation();
+            activeQuickSlotId = slotId;
+            const input = document.getElementById('quickSlotInput');
+            input.value = '';
+            input.click();
+        }
+
+        function handleQuickSlotFile(e) {
+            const file = e.target.files && e.target.files[0];
+            if (!file || !activeQuickSlotId) return;
+
+            const slot = mediaSlots.find(s => s.id === activeQuickSlotId);
+            if (!slot) return;
+
+            const isVideo = file.type.startsWith('video/');
+            slot.type = isVideo ? 'video' : 'image';
+            slot.url = URL.createObjectURL(file);
+            slot.isCustom = true;
+
+            saveSlotToDB(slot.id, file, slot.type, slot.caption);
+            refreshMediaOnPage();
+            if (!document.getElementById('studioModal').classList.contains('hidden')) {
+                renderStudioSlotList();
+            }
+            spawnFloatingCompliment(`Updated ${slot.label.split('•')[0]}! ✨`);
+        }
+
+        function handleBulkUpload(e) {
+            const files = Array.from(e.target.files || []);
+            if (!files.length) return;
+
+            let vidIdx = 0;
+            let imgIdx = 0;
+            const imageSlotOrder = ['photo1', 'photo2', 'photo3'];
+            const videoSlotOrder = ['video1', 'video2'];
+
+            files.forEach(file => {
+                const isVideo = file.type.startsWith('video/');
+                let targetSlotId = null;
+
+                if (isVideo && vidIdx < videoSlotOrder.length) {
+                    targetSlotId = videoSlotOrder[vidIdx++];
+                } else if (!isVideo && imgIdx < imageSlotOrder.length) {
+                    targetSlotId = imageSlotOrder[imgIdx++];
+                } else if (imgIdx < imageSlotOrder.length) {
+                    targetSlotId = imageSlotOrder[imgIdx++];
+                } else if (vidIdx < videoSlotOrder.length) {
+                    targetSlotId = videoSlotOrder[vidIdx++];
+                }
+
+                if (targetSlotId) {
+                    const slot = mediaSlots.find(s => s.id === targetSlotId);
+                    if (slot) {
+                        slot.type = isVideo ? 'video' : 'image';
+                        slot.url = URL.createObjectURL(file);
+                        slot.isCustom = true;
+                        saveSlotToDB(slot.id, file, slot.type, slot.caption);
+                    }
+                }
+            });
+
+            if (!document.getElementById('studioModal').classList.contains('hidden')) {
+                renderStudioSlotList();
+            }
+            refreshMediaOnPage();
+            spawnConfettiBurst(window.innerWidth / 2, window.innerHeight / 2, 40);
+            spawnFloatingCompliment(`Loaded ${files.length} Memories of Annu! ❤️`);
+        }
+
+        function resetAllMedia() {
+            if (dbInstance) {
+                try {
+                    const tx = dbInstance.transaction('mediaStore', 'readwrite');
+                    tx.objectStore('mediaStore').clear();
+                } catch (e) {}
+            }
+            location.reload();
+        }
+
+        function togglePresentationLock() {
+            presentationLocked = !presentationLocked;
+            document.body.classList.toggle('presentation-locked', presentationLocked);
+
+            const unlockBtn = document.getElementById('unlockFloatingBtn');
+            const lockModeIcon = document.getElementById('lockModeIcon');
+            const lockModeText = document.getElementById('lockModeText');
+
+            if (presentationLocked) {
+                unlockBtn.classList.remove('hidden');
+                unlockBtn.classList.add('flex');
+                lockModeIcon.className = 'fa-solid fa-lock text-emerald-300';
+                lockModeText.textContent = 'Gift Mode: ON';
+                spawnFloatingCompliment('Gift Mode ON: Ready for Annu Punia! 🎁');
+            } else {
+                unlockBtn.classList.add('hidden');
+                unlockBtn.classList.remove('flex');
+                lockModeIcon.className = 'fa-solid fa-lock-open';
+                lockModeText.textContent = 'Gift Mode: Off';
+                spawnFloatingCompliment('Edit Mode Unlocked ✨');
+            }
+        }
+
+        /* =====================================================
+           3. 10-STEP NAVIGATION & STORY PROGRESS BARS
+        ===================================================== */
+        function initStoryBars() {
+            const container = document.getElementById('storyBarContainer');
+            container.innerHTML = '';
+            for (let i = 1; i <= TOTAL_STEPS; i++) {
+                const seg = document.createElement('div');
+                seg.className = 'cursor-pointer h-1 bg-white/20 rounded-full overflow-hidden';
+                seg.onclick = () => goToStep(i);
+                seg.innerHTML = `<div id="prog-${i}" class="h-full bg-gradient-to-r from-pink-400 to-amber-300 transition-all duration-300 ${i === 1 ? 'w-full' : 'w-0'}"></div>`;
+                container.appendChild(seg);
+            }
+        }
+
+        function goToStep(stepNum) {
+            if (stepNum < 1 || stepNum > TOTAL_STEPS) return;
+            currentStep = stepNum;
+
+            for (let i = 1; i <= TOTAL_STEPS; i++) {
+                const el = document.getElementById(`step-${i}`);
+                const prog = document.getElementById(`prog-${i}`);
+                if (el) {
+                    if (i === currentStep) {
+                        el.classList.remove('hidden');
+                        el.classList.add('flex');
+                    } else {
+                        el.classList.add('hidden');
+                        el.classList.remove('flex');
+                    }
+                }
+                if (prog) {
+                    prog.style.width = i <= currentStep ? '100%' : '0%';
+                }
+            }
+
+            document.getElementById('stepBadgeLabel').textContent = `Step ${currentStep} of ${TOTAL_STEPS}`;
+            document.getElementById('footerStepTracker').textContent = `${currentStep} / ${TOTAL_STEPS}`;
+
+            // Manage Video #1 playback on Step 5
+            const v1 = document.getElementById('media-video1');
+            if (v1) {
+                if (currentStep === 5 && !v1.classList.contains('hidden')) {
+                    v1.play().catch(() => {});
+                } else {
+                    v1.pause();
+                }
+            }
+
+            // Manage Video #2 playback on Step 7
+            const v2 = document.getElementById('media-video2');
+            if (v2) {
+                if (currentStep === 7 && !v2.classList.contains('hidden')) {
+                    v2.play().catch(() => {});
+                } else {
+                    v2.pause();
+                }
+            }
+
+            // Initialize Scratch Card on Step 6
+            if (currentStep === 6) {
+                setTimeout(initScratchCard, 60);
+            }
+
+            playChimeSound(523.25 + currentStep * 35, 0.14);
+        }
+
+        function nextStep() {
+            startMusicOnInteraction();
+            if (currentStep < TOTAL_STEPS) {
+                goToStep(currentStep + 1);
+            } else {
+                triggerGrandFinale();
+            }
+        }
+
+        function prevStep() {
+            if (currentStep > 1) {
+                goToStep(currentStep - 1);
+            }
+        }
+
+        /* =====================================================
+           4. STEP-SPECIFIC INTERACTIONS (STEPS 1 TO 10)
+        ===================================================== */
+        // STEP 1: Heart Fingerprint Scanner
+        let scanTimer = null;
+        function startHeartScan(e) {
+            if (e) e.preventDefault();
+            startMusicOnInteraction();
+            document.getElementById('scanStatusText').textContent = 'SCANNING HEART...';
+            document.getElementById('scanResultMsg').textContent = '💓 Reading heartbeat of Annu Punia...';
+            scanTimer = setTimeout(completeHeartScan, 650);
+        }
+        function cancelHeartScan() {
+            clearTimeout(scanTimer);
+        }
+        function quickTapHeartScan() {
+            startMusicOnInteraction();
+            completeHeartScan();
+        }
+        function completeHeartScan() {
+            const icon = document.getElementById('scanHeartIcon');
+            icon.className = 'fa-solid fa-heart-circle-check text-5xl text-amber-300 animate-bounce';
+            document.getElementById('scanStatusText').textContent = 'QUEEN VERIFIED ✓';
+            document.getElementById('scanResultMsg').textContent = '👑 Welcome, Annu Punia My Love!';
+            spawnConfettiBurst(window.innerWidth / 2, window.innerHeight / 2, 35);
+            setTimeout(() => goToStep(2), 900);
+        }
+
+        // STEP 2: 3D Gift Box Unwrap (3 Taps)
+        let boxTaps = 0;
+        function tapGiftBox() {
+            startMusicOnInteraction();
+            boxTaps++;
+            const box = document.getElementById('giftBoxWrapper');
+            box.classList.remove('shake-anim');
+            void box.offsetWidth;
+            box.classList.add('shake-anim');
+
+            spawnConfettiBurst(window.innerWidth / 2, window.innerHeight * 0.45, 22);
+            playChimeSound(587.33 + boxTaps * 90, 0.18);
+
+            const badge = document.getElementById('giftTapBadge');
+            if (boxTaps < 3) {
+                badge.textContent = `Keep Tapping! (${boxTaps}/3) 🎁`;
+            } else {
+                badge.textContent = `Surprise Unwrapped for Annu! 🎉`;
+                spawnFloatingCompliment('Happy Birthday Annu Punia, My Love! ❤️');
+                setTimeout(() => goToStep(3), 850);
+            }
+        }
+
+        // STEP 3: Develop Polaroid #1 (White Floral Suit & Silver Jhumkas)
+        function developPolaroid() {
+            const img = document.getElementById('media-photo1');
+            const overlay = document.getElementById('polaroidOverlay1');
+            img.classList.remove('blur-md', 'scale-105');
+            overlay.classList.add('opacity-0', 'pointer-events-none');
+            spawnConfettiBurst(window.innerWidth / 2, window.innerHeight * 0.45, 25);
+            spawnFloatingCompliment('Those Silver Jhumkas & Soft Smile! 📸✨');
+        }
+
+        // STEP 4: Love Meter Overdrive
+        let loveMeterRunning = false;
+        function runLoveMeterOverdrive() {
+            if (loveMeterRunning) return;
+            loveMeterRunning = true;
+            startMusicOnInteraction();
+
+            const pctEl = document.getElementById('lovePercentDisplay');
+            const statusEl = document.getElementById('loveMeterStatus');
+            const barEl = document.getElementById('loveBarFill');
+            const btnEl = document.getElementById('loveMeterBtn');
+
+            let val = 0;
+            statusEl.textContent = 'Measuring Heartbeats...';
+            const interval = setInterval(() => {
+                val += Math.floor(Math.random() * 28) + 19;
+                if (val <= 100) {
+                    pctEl.textContent = `${val}%`;
+                    barEl.style.width = `${val}%`;
+                } else if (val < 1000) {
+                    pctEl.textContent = `${val}% 🔥`;
+                    barEl.style.width = `100%`;
+                    statusEl.textContent = 'SYSTEM OVERLOAD!';
+                } else {
+                    clearInterval(interval);
+                    pctEl.textContent = '∞ INFINITE%';
+                    statusEl.textContent = 'UNMEASURABLE LOVE FOR ANNU ❤️';
+                    btnEl.innerHTML = 'Next: Watch Your Candid Shy Smile Reel <i class="fa-solid fa-arrow-right ml-1"></i>';
+                    btnEl.onclick = () => goToStep(5);
+                    triggerGrandFinale();
+                }
+                playChimeSound(400 + Math.min(val, 600), 0.08);
+            }, 90);
+        }
+
+        // STEP 6: HTML5 Gold Scratch Card (Reveals Black Floral Saree Photo #2)
+        function initScratchCard() {
+            const sCanvas = document.getElementById('scratchCanvas');
+            if (!sCanvas) return;
+            const rect = sCanvas.parentElement.getBoundingClientRect();
+            sCanvas.width = rect.width || 275;
+            sCanvas.height = rect.height || 285;
+            const sCtx = sCanvas.getContext('2d');
+
+            const grad = sCtx.createLinearGradient(0, 0, sCanvas.width, sCanvas.height);
+            grad.addColorStop(0, '#ffd166');
+            grad.addColorStop(0.5, '#f4a261');
+            grad.addColorStop(1, '#e9c46a');
+            sCtx.fillStyle = grad;
+            sCtx.fillRect(0, 0, sCanvas.width, sCanvas.height);
+
+            sCtx.fillStyle = '#3d0828';
+            sCtx.font = 'bold 15px "Plus Jakarta Sans", sans-serif';
+            sCtx.textAlign = 'center';
+            sCtx.fillText('✨ SCRATCH GOLD FOIL, ANNU ✨', sCanvas.width / 2, sCanvas.height / 2 - 10);
+            sCtx.font = '12px sans-serif';
+            sCtx.fillText('Reveal your Black Floral Saree Portrait 🌸', sCanvas.width / 2, sCanvas.height / 2 + 15);
+
+            let isDrawing = false;
+            const scratch = (x, y) => {
+                sCtx.globalCompositeOperation = 'destination-out';
+                sCtx.beginPath();
+                sCtx.arc(x, y, 30, 0, Math.PI * 2);
+                sCtx.fill();
+            };
+
+            sCanvas.onmousedown = (e) => { isDrawing = true; scratch(e.offsetX, e.offsetY); };
+            sCanvas.onmousemove = (e) => { if (isDrawing) scratch(e.offsetX, e.offsetY); };
+            sCanvas.onmouseup = () => { isDrawing = false; };
+
+            sCanvas.ontouchstart = (e) => {
+                isDrawing = true;
+                const b = sCanvas.getBoundingClientRect();
+                const t = e.touches[0];
+                scratch(t.clientX - b.left, t.clientY - b.top);
+            };
+            sCanvas.ontouchmove = (e) => {
+                if (!isDrawing) return;
+                const b = sCanvas.getBoundingClientRect();
+                const t = e.touches[0];
+                scratch(t.clientX - b.left, t.clientY - b.top);
+            };
+            sCanvas.ontouchend = () => { isDrawing = false; };
+        }
+
+        function resetScratchCard() {
+            const sCanvas = document.getElementById('scratchCanvas');
+            if (sCanvas) {
+                const sCtx = sCanvas.getContext('2d');
+                sCtx.globalCompositeOperation = 'source-over';
+                initScratchCard();
+            }
+        }
+
+        // STEP 8: 3D Swipeable Memory Deck (Features all 3 Photos & Both Videos, led by image_3.png)
+        const deckSlotIds = ['photo3', 'photo1', 'photo2', 'video1', 'video2'];
+        let currentDeckIndex = 0;
+
+        function renderGalleryCarousel() {
+            const deck = document.getElementById('carouselDeck');
+            if (!deck) return;
+            deck.innerHTML = '';
+
+            deckSlotIds.forEach((slotId, idx) => {
+                const slot = mediaSlots.find(s => s.id === slotId);
+                if (!slot) return;
+
+                const offset = (idx - currentDeckIndex + deckSlotIds.length) % deckSlotIds.length;
+                if (offset > 2) return;
+
+                const scale = 1 - offset * 0.06;
+                const translateY = offset * 12;
+                const rotate = offset === 0 ? -1 : (offset % 2 === 0 ? -4 : 4);
+                const opacity = offset === 0 ? 1 : 0.55;
+                const zIndex = 30 - offset * 10;
+
+                const card = document.createElement('div');
+                card.className = 'polaroid-frame absolute inset-0 flex flex-col justify-between cursor-pointer';
+                card.style.transform = `translateY(${translateY}px) scale(${scale}) rotate(${rotate}deg)`;
+                card.style.opacity = opacity;
+                card.style.zIndex = zIndex;
+                card.onclick = () => nextGallerySlide();
+
+                const mediaHtml = slot.type === 'video'
+                    ? `<video src="${slot.url}" poster="${slot.fallbackUrl}" class="w-full h-52 object-cover rounded-lg bg-black" autoplay muted loop playsinline></video>`
+                    : `<img src="${slot.url}" onerror="this.src='${slot.fallbackUrl}'" class="w-full h-52 object-cover object-top rounded-lg bg-rose-950" alt="Memory">`;
+
+                card.innerHTML = `
+                    <button onclick="triggerQuickUpload('${slot.id}', event)" class="edit-trigger absolute top-4 right-4 z-30 px-2.5 py-1 rounded-full bg-black/75 text-amber-300 text-[10px] font-bold border border-amber-300/40">
+                        <i class="fa-solid fa-camera mr-1"></i>Swap
+                    </button>
+                    <div class="w-full h-52 rounded-lg overflow-hidden relative">
+                        ${mediaHtml}
+                    </div>
+                    <p class="font-script text-base sm:text-lg text-rose-900 mt-1.5 leading-tight line-clamp-2">${slot.caption}</p>
+                `;
+                deck.appendChild(card);
+            });
+
+            const counter = document.getElementById('galleryCounter');
+            if (counter) counter.textContent = `${currentDeckIndex + 1} / ${deckSlotIds.length}`;
+        }
+
+        function nextGallerySlide() {
+            currentDeckIndex = (currentDeckIndex + 1) % deckSlotIds.length;
+            renderGalleryCarousel();
+            playChimeSound(659.25, 0.1);
+        }
+
+        function prevGallerySlide() {
+            currentDeckIndex = (currentDeckIndex - 1 + deckSlotIds.length) % deckSlotIds.length;
+            renderGalleryCarousel();
+            playChimeSound(523.25, 0.1);
+        }
+
+        // STEP 9: 10 Tailored Reasons Why I Love Annu Punia (Referencing her exact outfits & videos)
+        const tenReasons = [
+            "The way that loose strand of hair frames your face with your silver jhumkas in your white floral suit—you look like an angel on earth.",
+            "When you shyly hide your smile behind your brown phone case in your light-blue shirt and laugh ('Band kar le...')—that candid joy is my favorite thing ever.",
+            "How effortlessly royal and graceful you look standing by the glass windows in your black floral saree with that cute pink hair clip.",
+            "Our silly moments together with the pixel puppy-ears and glasses filter—you make every ordinary day playful and unforgettable.",
+            "The sheer elegance of you clasping your hands in that black floral saree with the pink trim—I could admire you forever.",
+            "Your warm, expressive eyes that say a thousand loving words before you even speak a single syllable.",
+            "Your contagious laugh that instantly melts away every bit of stress in my world.",
+            "Your pure, caring heart that makes everyone around you feel so deeply special.",
+            "Because whether we are dressed up in traditional sarees or being goofy in casual shirts, every second with you is magic.",
+            "Because you are YOU, Annu Punia—my love, my best friend, and the forever Queen of my heart! 👑❤️"
+        ];
+
+        function initReasonsGrid() {
+            const grid = document.getElementById('reasonsGrid');
+            if (!grid) return;
+            grid.innerHTML = '';
+            tenReasons.forEach((r, idx) => {
+                const btn = document.createElement('button');
+                btn.className = `h-12 rounded-2xl glass-pill flex flex-col items-center justify-center border border-pink-400/30 hover:bg-pink-500/40 active:scale-90 transition ${idx === 0 ? 'bg-pink-500/40 border-amber-300' : ''}`;
+                btn.innerHTML = `<span class="text-xs">💖</span><span class="text-[10px] font-bold text-amber-200">#${idx + 1}</span>`;
+                btn.onclick = () => {
+                    document.getElementById('reasonBadge').textContent = `Reason #${idx + 1} of 10 • For Annu Punia`;
+                    document.getElementById('reasonText').textContent = `"${r}"`;
+                    Array.from(grid.children).forEach(c => c.classList.remove('bg-pink-500/40', 'border-amber-300'));
+                    btn.classList.add('bg-pink-500/40', 'border-amber-300');
+                    playChimeSound(500 + idx * 45, 0.12);
+                    spawnConfettiBurst(window.innerWidth / 2, window.innerHeight * 0.4, 14);
+                };
+                grid.appendChild(btn);
+            });
+        }
+
+        // STEP 10: Birthday Cake Candles + Full 5-Memory Scrapbook Wall
+        let candlesBlown = [false, false, false];
+        function blowSingleCandle(index) {
+            startMusicOnInteraction();
+            if (candlesBlown[index]) return;
+            candlesBlown[index] = true;
+
+            const flame = document.getElementById(`flame-${index}`);
+            if (flame) flame.classList.add('extinguished');
+
+            playChimeSound(440 + index * 110, 0.18);
+            spawnConfettiBurst(window.innerWidth / 2, window.innerHeight * 0.35, 22);
+
+            if (candlesBlown.every(Boolean)) {
+                document.getElementById('cakeHeadline').innerHTML = "Happy Birthday Annu Punia, My Love! 🎉❤️";
+                document.getElementById('birthdayBanner').classList.remove('hidden');
+                triggerGrandFinale();
+            }
+        }
+
+        function blowAllCandles() {
+            [0, 1, 2].forEach((idx, d) => setTimeout(() => blowSingleCandle(idx), d * 150));
+        }
+
+        function renderFinaleMediaWall() {
+            const wall = document.getElementById('finaleMediaWall');
+            if (!wall) return;
+            wall.innerHTML = '';
+
+            mediaSlots.forEach((slot, idx) => {
+                const cell = document.createElement('div');
+                cell.className = `relative aspect-square rounded-xl overflow-hidden border border-pink-300/35 bg-black/40 cursor-pointer group ${idx === 0 ? 'col-span-2 row-span-1 aspect-auto h-28' : 'h-28'}`;
+                cell.onclick = () => triggerQuickUpload(slot.id);
+
+                if (slot.type === 'video') {
+                    cell.innerHTML = `
+                        <video src="${slot.url}" poster="${slot.fallbackUrl}" class="w-full h-full object-cover" autoplay muted loop playsinline></video>
+                        <span class="absolute top-1.5 right-1.5 px-1.5 py-0.5 rounded bg-black/70 text-[9px] text-amber-300 font-bold"><i class="fa-solid fa-video"></i></span>
+                    `;
+                } else {
+                    cell.innerHTML = `
+                        <img src="${slot.url}" onerror="this.src='${slot.fallbackUrl}'" class="w-full h-full object-cover object-top" alt="Annu Memory">
+                        <span class="absolute top-1.5 right-1.5 px-1.5 py-0.5 rounded bg-black/70 text-[9px] text-pink-300 font-bold"><i class="fa-solid fa-camera"></i></span>
+                    `;
+                }
+                wall.appendChild(cell);
+            });
+        }
+
+        /* =====================================================
+           5. FLOATING COMPLIMENTS & CONFETTI FIREWORKS
+        ===================================================== */
+        let hugCounter = 1430;
+        const compliments = [
+            "Happy Birthday Annu! 🎂",
+            "Annu Punia, My Love ❤️",
+            "Queen of My Heart 👑",
+            "Prettiest Girl Alive ✨",
+            "Forever Yours 💞",
+            "My Favorite Soul 🌹"
+        ];
+
+        function sendLoveExplosion(e) {
+            startMusicOnInteraction();
+            hugCounter++;
+            const countEl = document.getElementById('hugCount');
+            if (countEl) countEl.textContent = hugCounter.toLocaleString();
+
+            const x = e && e.clientX ? e.clientX : window.innerWidth / 2;
+            const y = e && e.clientY ? e.clientY : window.innerHeight * 0.7;
+
+            spawnConfettiBurst(x, y, 18);
+            const randomText = compliments[Math.floor(Math.random() * compliments.length)];
+            spawnFloatingCompliment(randomText, x, y);
+            playChimeSound(783.99, 0.1);
+        }
+
+        function spawnFloatingCompliment(text, xPos, yPos) {
+            const layer = document.getElementById('complimentLayer');
+            const badge = document.createElement('div');
+            const x = xPos || (window.innerWidth * 0.2 + Math.random() * window.innerWidth * 0.5);
+            const y = yPos || (window.innerHeight * 0.65);
+
+            badge.className = 'floating-compliment fixed z-50 px-3.5 py-1.5 rounded-full glass-card text-xs font-bold text-amber-200 border border-pink-400/50 shadow-lg whitespace-nowrap';
+            badge.style.left = `${Math.min(Math.max(x - 75, 12), window.innerWidth - 180)}px`;
+            badge.style.top = `${y}px`;
+            badge.innerHTML = text;
+
+            layer.appendChild(badge);
+            setTimeout(() => badge.remove(), 1800);
+        }
+
+        function triggerGrandFinale() {
+            startMusicOnInteraction();
+            for (let i = 0; i < 4; i++) {
+                setTimeout(() => {
+                    const rx = window.innerWidth * (0.2 + Math.random() * 0.6);
+                    const ry = window.innerHeight * (0.2 + Math.random() * 0.45);
+                    spawnConfettiBurst(rx, ry, 38);
+                }, i * 240);
+            }
+            spawnFloatingCompliment("Happy Birthday Annu Punia, My Love! 🎆❤️");
+        }
+
+        /* =====================================================
+           6. WEB AUDIO API ROMANTIC MUSIC BOX
+        ===================================================== */
+        let audioCtx = null;
+        let isPlayingMusic = false;
+        let melodyTimeout = null;
+        let noteCursor = 0;
+
+        const birthdayMelody = [
+            { f: 261.63, d: 350 }, { f: 261.63, d: 250 }, { f: 293.66, d: 550 }, { f: 261.63, d: 550 }, { f: 349.23, d: 550 }, { f: 329.63, d: 950 },
+            { f: 261.63, d: 350 }, { f: 261.63, d: 250 }, { f: 293.66, d: 550 }, { f: 261.63, d: 550 }, { f: 392.00, d: 550 }, { f: 349.23, d: 950 },
+            { f: 261.63, d: 350 }, { f: 261.63, d: 250 }, { f: 523.25, d: 550 }, { f: 440.00, d: 550 }, { f: 349.23, d: 550 }, { f: 329.63, d: 550 }, { f: 293.66, d: 900 },
+            { f: 466.16, d: 350 }, { f: 466.16, d: 250 }, { f: 440.00, d: 550 }, { f: 349.23, d: 550 }, { f: 392.00, d: 550 }, { f: 349.23, d: 1100 }
+        ];
+
+        function initAudio() {
+            if (!audioCtx) {
+                const AudioContext = window.AudioContext || window.webkitAudioContext;
+                audioCtx = new AudioContext();
+            }
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+        }
+
+        function playChimeSound(freq, duration = 0.25) {
+            if (!isPlayingMusic || !audioCtx) return;
+            try {
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+
+                gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.07, audioCtx.currentTime + 0.02);
+                gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + duration);
+
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start();
+                osc.stop(audioCtx.currentTime + duration);
+            } catch (e) {}
+        }
+
+        function scheduleNextMelodyNote() {
+            if (!isPlayingMusic) return;
+            const note = birthdayMelody[noteCursor];
+            playChimeSound(note.f, note.d / 1000);
+            playChimeSound(note.f * 2, (note.d / 1000) * 0.65);
+
+            noteCursor = (noteCursor + 1) % birthdayMelody.length;
+            melodyTimeout = setTimeout(scheduleNextMelodyNote, note.d + 70);
+        }
+
+        function startMusicOnInteraction() {
+            if (!audioCtx) {
+                initAudio();
+                isPlayingMusic = true;
+                updateAudioIcon();
+                scheduleNextMelodyNote();
+            }
+        }
+
+        function toggleMusic() {
+            initAudio();
+            isPlayingMusic = !isPlayingMusic;
+            updateAudioIcon();
+            if (isPlayingMusic) scheduleNextMelodyNote();
+            else clearTimeout(melodyTimeout);
+        }
+
+        function updateAudioIcon() {
+            const icon = document.getElementById('audioIcon');
+            icon.className = isPlayingMusic
+                ? 'fa-solid fa-volume-high text-xs text-amber-300'
+                : 'fa-solid fa-volume-xmark text-xs text-pink-200';
+        }
+
+        /* =====================================================
+           7. BACKGROUND CANVAS: FLOATING HEARTS & FIREWORKS
+        ===================================================== */
+        const canvas = document.getElementById('bgCanvas');
+        const ctx = canvas.getContext('2d');
+        let bgParticles = [];
+        let burstParticles = [];
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        for (let i = 0; i < 30; i++) {
+            bgParticles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                size: Math.random() * 12 + 6,
+                speedY: Math.random() * 0.55 + 0.2,
+                speedX: (Math.random() - 0.5) * 0.4,
+                opacity: Math.random() * 0.45 + 0.15,
+                isHeart: Math.random() > 0.4
+            });
+        }
+
+        function spawnConfettiBurst(x, y, count = 30) {
+            const colors = ['#ff2a85', '#ffd166', '#ff9ebb', '#ffffff', '#ff5ca1'];
+            for (let i = 0; i < count; i++) {
+                const angle = Math.random() * Math.PI * 2;
+                const speed = Math.random() * 6 + 2;
+                burstParticles.push({
+                    x, y,
+                    vx: Math.cos(angle) * speed,
+                    vy: Math.sin(angle) * speed - 2,
+                    size: Math.random() * 6 + 4,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    alpha: 1,
+                    gravity: 0.12
+                });
+            }
+        }
+
+        function drawHeart(x, y, size, color, alpha) {
+            ctx.save();
+            ctx.globalAlpha = alpha;
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            const topCurveHeight = size * 0.3;
+            ctx.moveTo(x, y + topCurveHeight);
+            ctx.bezierCurveTo(x, y, x - size / 2, y, x - size / 2, y + topCurveHeight);
+            ctx.bezierCurveTo(x - size / 2, y + (size + topCurveHeight) / 2, x, y + (size + topCurveHeight) / 1.4, x, y + size);
+            ctx.bezierCurveTo(x, y + (size + topCurveHeight) / 1.4, x + size / 2, y + (size + topCurveHeight) / 2, x + size / 2, y + topCurveHeight);
+            ctx.bezierCurveTo(x + size / 2, y, x, y, x, y + topCurveHeight);
+            ctx.closePath();
+            ctx.fill();
+            ctx.restore();
+        }
+
+        function animateCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            bgParticles.forEach(p => {
+                p.y -= p.speedY;
+                p.x += p.speedX;
+                if (p.y < -20) {
+                    p.y = canvas.height + 20;
+                    p.x = Math.random() * canvas.width;
+                }
+                if (p.isHeart) {
+                    drawHeart(p.x, p.y, p.size, '#ff6ea7', p.opacity);
+                } else {
+                    ctx.save();
+                    ctx.globalAlpha = p.opacity;
+                    ctx.fillStyle = '#ffd166';
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.size * 0.22, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.restore();
+                }
+            });
+
+            for (let i = burstParticles.length - 1; i >= 0; i--) {
+                const b = burstParticles[i];
+                b.x += b.vx;
+                b.y += b.vy;
+                b.vy += b.gravity;
+                b.alpha -= 0.016;
+                if (b.alpha <= 0) {
+                    burstParticles.splice(i, 1);
+                    continue;
+                }
+                drawHeart(b.x, b.y, b.size, b.color, b.alpha);
+            }
+
+            requestAnimationFrame(animateCanvas);
+        }
+
+        window.onload = async function () {
+            initStoryBars();
+            initReasonsGrid();
+            await initMediaDB();
+            await loadSlotsFromDB();
+            refreshMediaOnPage();
+            animateCanvas();
+        };
+    </script>
+</body>
+</html>
