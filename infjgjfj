@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+a<!aa html>
 <html lang="en">
 <meta name="google-site-verification" content="dcNMPJcKGZXS042x7ea45qns0uur5xsQBE-WAjoAb6s" />    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -2059,8 +2059,7 @@
                 b.alpha -= 0.016;
                 if (b.alpha <= 0) {
                     burstParticles.splice(i, 1);
-                    continue;
-                }
+                    continue;                }
                 drawHeart(b.x, b.y, b.size, b.color, b.alpha);
             }
 
