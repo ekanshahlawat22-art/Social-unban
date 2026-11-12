@@ -1,0 +1,311 @@
+<!-- START: PAID METHODS STORE SECTION -->
+<section id="methods-store" class="ms-wrapper">
+  <style>
+    .ms-wrapper {
+      --ms-bg: #0b0f17;
+      --ms-card: #131a27;
+      --ms-border: #232f46;
+      --ms-text: #f1f5f9;
+      --ms-muted: #94a3b8;
+      --ms-accent: #22c55e;
+      --ms-accent-dark: #16a34a;
+      --ms-accent-text: #052e16;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--ms-bg);
+      color: var(--ms-text);
+      padding: 48px 16px 70px;
+      border-top: 1px solid var(--ms-border);
+      box-sizing: border-box;
+    }
+    .ms-wrapper *, .ms-wrapper *::before, .ms-wrapper *::after {
+      box-sizing: border-box;
+    }
+    .ms-container { max-width: 920px; margin: 0 auto; }
+    .ms-topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .ms-badge-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ms-accent);
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+    .ms-toggle {
+      display: inline-flex;
+      background: var(--ms-card);
+      border: 1px solid var(--ms-border);
+      border-radius: 999px;
+      padding: 4px;
+    }
+    .ms-curr-btn {
+      border: none;
+      background: transparent;
+      color: var(--ms-muted);
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .ms-curr-btn.active {
+      background: var(--ms-accent);
+      color: var(--ms-accent-text);
+    }
+    .ms-header { text-align: center; margin-bottom: 28px; }
+    .ms-header h2 { font-size: 26px; margin: 0 0 8px; color: var(--ms-text); }
+    .ms-header p { color: var(--ms-muted); font-size: 15px; max-width: 600px; margin: 0 auto; }
+    .ms-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+    .ms-card {
+      background: var(--ms-card);
+      border: 1px solid var(--ms-border);
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .ms-tag {
+      display: inline-block;
+      background: rgba(34, 197, 94, 0.14);
+      color: var(--ms-accent);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+    .ms-card h3 { font-size: 18px; margin: 0 0 10px; color: var(--ms-text); }
+    .ms-reason {
+      background: #0f1622;
+      border-left: 3px solid var(--ms-accent);
+      padding: 10px 12px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      color: #cbd5e1;
+      margin-bottom: 14px;
+      line-height: 1.5;
+    }
+    .ms-reason strong {
+      color: var(--ms-accent);
+      display: block;
+      font-size: 11px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+    .ms-list { list-style: none; padding: 0; margin: 0 0 18px; }
+    .ms-list li {
+      font-size: 13.5px;
+      color: var(--ms-muted);
+      padding-left: 18px;
+      position: relative;
+      margin-bottom: 6px;
+      line-height: 1.45;
+    }
+    .ms-list li::before {
+      content: "✓";
+      color: var(--ms-accent);
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+    }
+    .ms-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--ms-border);
+      padding-top: 14px;
+      gap: 10px;
+    }
+    .ms-price { font-size: 22px; font-weight: 800; color: var(--ms-text); }
+    .ms-buy-btn {
+      background: var(--ms-accent);
+      color: var(--ms-accent-text);
+      border: none;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .ms-buy-btn:hover { background: var(--ms-accent-dark); color: #fff; }
+    .ms-modal-bg {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.78);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      z-index: 9999;
+    }
+    .ms-modal-bg.open { display: flex; }
+    .ms-modal {
+      background: var(--ms-card);
+      border: 1px solid var(--ms-border);
+      border-radius: 16px;
+      max-width: 400px;
+      width: 100%;
+      padding: 22px;
+    }
+    .ms-modal h4 { font-size: 18px; margin: 0 0 6px; color: var(--ms-text); }
+    .ms-modal p { color: var(--ms-muted); font-size: 14px; margin: 0 0 16px; }
+    .ms-actions { display: flex; flex-direction: column; gap: 10px; }
+    .ms-link {
+      display: block;
+      text-align: center;
+      padding: 12px;
+      border-radius: 10px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .ms-pay { background: var(--ms-accent); color: var(--ms-accent-text); }
+    .ms-wa { background: #1e293b; color: #f8fafc; border: 1px solid #334155; }
+    .ms-tg { background: #1e293b; color: #38bdf8; border: 1px solid #334155; }
+    .ms-cancel {
+      margin-top: 12px;
+      width: 100%;
+      background: transparent;
+      border: none;
+      color: var(--ms-muted);
+      padding: 8px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+  </style>
+
+  <div class="ms-container">
+    <div class="ms-topbar">
+      <span class="ms-badge-label">Instant Access Methods</span>
+      <div class="ms-toggle">
+        <button type="button" class="ms-curr-btn active" id="msBtnINR" onclick="msSetCurrency('INR')">₹199 INR</button>
+        <button type="button" class="ms-curr-btn" id="msBtnUSD" onclick="msSetCurrency('USD')">$2.50 USD</button>
+      </div>
+    </div>
+
+    <div class="ms-header">
+      <h2 id="msStoreTitle">Step-by-Step Recovery &amp; Setup Methods</h2>
+      <p id="msStoreSub">Select a method below to view the reason it works and unlock the full guide.</p>
+    </div>
+
+    <div class="ms-grid" id="msGrid"></div>
+  </div>
+
+  <!-- Checkout Popup -->
+  <div class="ms-modal-bg" id="msModal">
+    <div class="ms-modal">
+      <h4 id="msModalTitle">Method Title</h4>
+      <p id="msModalPrice">Price: ₹199 INR</p>
+      <div class="ms-actions">
+        <a id="msPayLink" class="ms-link ms-pay" href="#" target="_blank" rel="noopener">Pay Online Now</a>
+        <a id="msWaLink" class="ms-link ms-wa" href="#" target="_blank" rel="noopener">Order on WhatsApp</a>
+        <a id="msTgLink" class="ms-link ms-tg" href="#" target="_blank" rel="noopener">Order on Telegram</a>
+      </div>
+      <button type="button" class="ms-cancel" onclick="msCloseModal()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    // ====================================================
+    // EDIT YOUR LINKS, PRICES, AND METHODS RIGHT HERE:
+    // ====================================================
+    const STORE_CONFIG = {
+      title: "Step-by-Step Recovery & Setup Methods",
+      subtitle: "Select a method below to view the reason it works and unlock the full guide.",
+      priceINR: "₹199",
+      priceUSD: "$2.50",
+      checkoutUrlINR: "https://rzp.io/l/your-payment-link",
+      checkoutUrlUSD: "https://buy.stripe.com/your-payment-link",
+      whatsappNumber: "919999999999", // Country code + number (no + sign)
+      telegramUsername: "nishxnt_social_agency", // Username without @
+      methods: [
+        {
+          tag: "Identity & Appeal",
+          title: "Identity Verification & Appeal Recovery Guide",
+          reason: "Aligns your fresh email setup, account data export, and official video selfie or valid ID submission with platform review checks.",
+          highlights: [
+            "Fresh secure email & clean network setup",
+            "How to download account data to confirm exact DOB & profile info",
+            "Official video selfie & valid ID appeal checklist"
+          ]
+        },
+        {
+          tag: "Login & Security",
+          title: "2FA & Login Loop Troubleshooting Guide",
+          reason: "Fixes stuck SMS codes and authenticator lockouts by isolating trusted device sessions and backup code recovery paths.",
+          highlights: [
+            "Trusted device & browser session recovery steps",
+            "Backup code & support escalation checklist",
+            "Post-recovery security setup"
+          ]
+        }
+      ]
+    };
+
+    let msCurrency = "INR";
+
+    function msRender() {
+      document.getElementById("msStoreTitle").textContent = STORE_CONFIG.title;
+      document.getElementById("msStoreSub").textContent = STORE_CONFIG.subtitle;
+      const price = msCurrency === "INR" ? STORE_CONFIG.priceINR : STORE_CONFIG.priceUSD;
+
+      document.getElementById("msGrid").innerHTML = STORE_CONFIG.methods.map((m, i) => `
+        <div class="ms-card">
+          <div>
+            <span class="ms-tag">${m.tag}</span>
+            <h3>${m.title}</h3>
+            <div class="ms-reason">
+              <strong>Why This Works</strong>
+              ${m.reason}
+            </div>
+            <ul class="ms-list">
+              ${m.highlights.map(item => `<li>${item}</li>`).join("")}
+            </ul>
+          </div>
+          <div class="ms-footer">
+            <span class="ms-price">${price}</span>
+            <button type="button" class="ms-buy-btn" onclick="msOpenModal(${i})">Get Method</button>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function msSetCurrency(curr) {
+      msCurrency = curr;
+      document.getElementById("msBtnINR").classList.toggle("active", curr === "INR");
+      document.getElementById("msBtnUSD").classList.toggle("active", curr === "USD");
+      msRender();
+    }
+
+    function msOpenModal(index) {
+      const m = STORE_CONFIG.methods[index];
+      const price = msCurrency === "INR" ? STORE_CONFIG.priceINR : STORE_CONFIG.priceUSD;
+      const payUrl = msCurrency === "INR" ? STORE_CONFIG.checkoutUrlINR : STORE_CONFIG.checkoutUrlUSD;
+      const text = encodeURIComponent(`Hi! I want to buy "${m.title}" (${price}).`);
+
+      document.getElementById("msModalTitle").textContent = m.title;
+      document.getElementById("msModalPrice").textContent = `Price: ${price} (${msCurrency})`;
+      document.getElementById("msPayLink").href = payUrl;
+      document.getElementById("msWaLink").href = `https://wa.me/${STORE_CONFIG.whatsappNumber}?text=${text}`;
+      document.getElementById("msTgLink").href = `https://t.me/${STORE_CONFIG.telegramUsername}?text=${text}`;
+      document.getElementById("msModal").classList.add("open");
+    }
+
+    function msCloseModal() {
+      document.getElementById("msModal").classList.remove("open");
+    }
+
+    msRender();
+  </script>
+</section>
+<!-- END: PAID METHODS STORE SECTION -->
